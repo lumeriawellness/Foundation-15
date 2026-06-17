@@ -1,0 +1,2486 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)file:///Users/jessicamcgraw/Downloads/Foundation_15_Lumeria_Wellness_V5_11.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foundation 15™ | Lumeria Wellness™</title>
+<meta name="description" content="Foundation 15™: A Cell to Soul™ Reset for the Woman Holding Everything by Jessica McGraw, PA-C, dipACLM">
+<meta name="theme-color" content="#f8f4ef">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Foundation 15">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="file:///Users/jessicamcgraw/Downloads/Foundation%2015%E2%84%A2%20_%20Lumeria%20Wellness%E2%84%A2%20V4_files/css2" rel="stylesheet">
+<style>
+:root {
+  /* Interior palette — quiet room, not storefront */
+  --bg: #f8f4ef;
+  --header-bg: #f8f4ef;
+  --header-text: #2c2825;
+  --green: #96b864;
+  --green-dark: #6a8a44;
+  --green-mid: #b8d090;
+  --green-light: #deecd0;
+  --coral: #c97d6a;
+  --coral-dark: #a85e50;
+  --yellow: #d4a422;
+  --yellow-dark: #a07818;
+  --blue-grey: #c8d4d8;
+  --blue-grey-dark: #8aa0a8;
+  --text-dark: #2c2825;
+  --text-mid: #5c5450;
+  --text-light: #8c847e;
+  --border: rgba(44,40,37,0.10);
+  --border-strong: rgba(44,40,37,0.18);
+  --cream-dark: #ede8e2;
+  --white: #ffffff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Jost', sans-serif;
+  background: var(--bg);
+  color: var(--text-dark);
+  font-size: 16px;
+  line-height: 1.6;
+}
+.max-wrap { max-width: 680px; margin: 0 auto; padding: 0 16px; }
+
+/* PWA BANNER */
+#pwa-banner {
+  background: var(--green-dark);
+  color: #fff;
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-family: 'Jost', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+#pwa-banner button {
+  background: rgba(255,255,255,0.25);
+  border: 1px solid rgba(255,255,255,0.5);
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: 'Jost', sans-serif;
+}
+
+/* HEADER */
+header {
+  background: var(--bg);
+  color: var(--header-text);
+  padding: 28px 16px 22px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+header h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--header-text);
+}
+header .subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 16px;
+  color: var(--header-text);
+  opacity: 0.85;
+  margin-top: 4px;
+}
+header .brand {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-top: 6px;
+}
+
+/* TABS */
+.tab-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg);
+  border-bottom: 2px solid var(--border);
+  display: flex;
+  max-width: 680px;
+  margin: 0 auto;
+}
+.tab-btn {
+  flex: 1;
+  padding: 14px 8px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-family: 'Jost', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--text-mid);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.tab-btn.active {
+  border-bottom-color: var(--yellow);
+  color: var(--yellow-dark);
+}
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* CARDS */
+.card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+.card-green { background: var(--green); color: #fff; border: none; }
+.card-coral { background: var(--coral); color: #fff; border: none; }
+.card-yellow { background: var(--yellow); color: #fff; border: none; }
+.card-cream { background: var(--cream-dark); border: 1px solid var(--border-strong); }
+
+/* COMMITMENT CARD */
+.commitment-card { padding: 20px; }
+.commitment-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+.commitment-card input[type="date"] {
+  border: 1px solid var(--border-strong);
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-family: 'Jost', sans-serif;
+  font-size: 15px;
+  background: var(--bg);
+  color: var(--text-dark);
+  width: 100%;
+  margin-bottom: 8px;
+}
+.commitment-card label { font-size: 13px; font-weight: 500; margin-bottom: 4px; display: block; color: var(--text-mid); }
+.commitment-note { font-size: 13px; font-style: italic; color: var(--text-light); margin-top: 6px; }
+
+/* PREGAME BANNER */
+.pregame-banner {
+  background: var(--cream-dark);
+  color: var(--text-dark);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 16px;
+  border-left: 4px solid var(--coral);
+}
+.pregame-banner h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: var(--text-dark);
+}
+.pregame-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.pregame-col h4 {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  color: var(--coral-dark);
+}
+.pregame-col p { font-size: 13px; line-height: 1.5; color: var(--text-mid); }
+
+/* ACTIVATION BAR */
+.activation-bar {
+  background: var(--blue-grey);
+  color: var(--text-dark);
+  border-radius: 10px;
+  padding: 14px 20px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+/* DATE DISPLAY */
+.date-display {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--text-light);
+  text-align: right;
+  margin-bottom: 10px;
+  font-family: 'Jost', sans-serif;
+}
+
+/* PROGRESS BAR */
+.progress-wrap {
+  margin-bottom: 16px;
+}
+.progress-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-mid);
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+.progress-bar-outer {
+  height: 10px;
+  background: var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.progress-bar-inner {
+  height: 100%;
+  background: linear-gradient(90deg, var(--green), var(--yellow-dark));
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+
+/* HARD DAY MODE */
+.hard-day-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  background: var(--cream-dark);
+  border: 1px solid var(--border-strong);
+  border-left: 4px solid var(--coral);
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+.hard-day-row span {
+  font-style: italic;
+  font-size: 15px;
+  color: var(--coral-dark);
+  font-weight: 500;
+}
+.hard-day-btn {
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid var(--coral);
+  background: none;
+  border-radius: 20px;
+  padding: 7px 16px;
+  cursor: pointer;
+  color: var(--coral-dark);
+  transition: all 0.2s;
+}
+.hard-day-btn.active { background: var(--coral); color: #fff; border-color: var(--coral); }
+.hard-day-card {
+  background: var(--cream-dark);
+  color: var(--text-dark);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 16px;
+  border-left: 4px solid var(--coral);
+}
+.hard-day-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--coral-dark);
+}
+.hard-day-card p { font-size: 14px; color: var(--text-mid); margin-bottom: 14px; }
+
+/* BLOCK HEADERS */
+.block-header {
+  border-radius: 8px 8px 0 0;
+  padding: 10px 16px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 20px;
+}
+.block-header.nourish { background: var(--green); color: #fff; }
+.block-header.detox { background: var(--coral); color: #fff; }
+.block-header.connect { background: var(--yellow); color: #fff; }
+
+/* CHECKLIST ITEMS */
+.checklist-item {
+  border: 1px solid var(--border);
+  border-top: none;
+  padding: 16px;
+  background: var(--bg);
+  transition: background 0.2s;
+}
+.checklist-item:last-of-type { border-radius: 0 0 8px 8px; }
+.item-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.item-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid var(--border-strong);
+  flex-shrink: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  margin-top: 2px;
+  background: var(--bg);
+}
+.item-circle.checked {
+  background: var(--green);
+  border-color: var(--green);
+}
+.item-circle.checked::after {
+  content: '';
+  width: 10px;
+  height: 6px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg) translateY(-1px);
+}
+.item-circle.nourish-dot { border-color: var(--green); }
+.item-circle.detox-dot { border-color: var(--coral); }
+.item-circle.connect-dot { border-color: var(--yellow); }
+.item-text { flex: 1; }
+.item-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1.3;
+}
+.item-sub {
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--text-light);
+  margin-top: 2px;
+  line-height: 1.4;
+}
+
+/* FUEL DOTS */
+.fuel-dots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  padding-left: 40px;
+}
+.fuel-dot-btn {
+  font-family: 'Jost', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid var(--green);
+  background: none;
+  color: var(--green);
+  border-radius: 20px;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.fuel-dot-btn.tapped {
+  background: var(--green);
+  color: #fff;
+}
+
+/* INLINE POPOVER */
+.inline-popover {
+  display: none;
+  background: var(--cream-dark);
+  border: 1px solid var(--border-strong);
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 10px;
+}
+.inline-popover.open { display: block; }
+.popover-close {
+  font-family: 'Jost', sans-serif;
+  font-size: 12px;
+  float: right;
+  cursor: pointer;
+  color: var(--text-light);
+  background: none;
+  border: none;
+  padding: 2px 6px;
+}
+
+/* PROTEIN ACCORDION */
+.accordion-toggle {
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-mid);
+  background: var(--cream-dark);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  margin-top: 10px;
+}
+.accordion-body {
+  display: none;
+  padding: 14px;
+  background: var(--cream-dark);
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+}
+.accordion-body.open { display: block; }
+
+/* CALCULATORS */
+.calc-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.calc-row input[type="number"] {
+  width: 90px;
+  padding: 7px 10px;
+  border: 1px solid var(--border-strong);
+  border-radius: 6px;
+  font-family: 'Jost', sans-serif;
+  font-size: 14px;
+  background: var(--bg);
+  color: var(--text-dark);
+}
+.calc-row select {
+  padding: 7px 10px;
+  border: 1px solid var(--border-strong);
+  border-radius: 6px;
+  font-family: 'Jost', sans-serif;
+  font-size: 14px;
+  background: var(--bg);
+  color: var(--text-dark);
+  cursor: pointer;
+}
+.calc-btn {
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  background: var(--green);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+.calc-result {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--green-dark);
+  margin-top: 6px;
+}
+.calc-label { font-size: 13px; font-weight: 500; color: var(--text-mid); margin-bottom: 6px; }
+
+/* ZONE 2 TRACKER */
+.zone2-tracker {
+  margin-top: 10px;
+  padding-left: 0;
+}
+.minutes-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+.min-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  background: var(--bg);
+  color: var(--text-dark);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Jost', sans-serif;
+}
+.minutes-display {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-dark);
+  min-width: 60px;
+  text-align: center;
+}
+.minutes-note { font-size: 12px; color: var(--text-light); }
+.milestone-msg {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--green-dark);
+  margin-top: 4px;
+  min-height: 18px;
+}
+.tracker-italic {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--text-light);
+  margin-top: 6px;
+}
+.reset-btn {
+  font-family: 'Jost', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  background: none;
+  border: 1px solid var(--border-strong);
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+  color: var(--text-light);
+  margin-top: 8px;
+}
+
+/* RESISTANCE SESSIONS */
+.session-circles {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+}
+.session-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid var(--yellow);
+  background: var(--bg);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-mid);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Jost', sans-serif;
+  transition: all 0.2s;
+}
+.session-circle.tapped {
+  background: var(--yellow);
+  color: #fff;
+}
+
+/* COMPLETION CARD */
+.completion-card {
+  background: var(--green-dark);
+  color: #fff;
+  border-radius: 10px;
+  padding: 24px 20px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.completion-card h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.completion-card .sub {
+  font-style: italic;
+  font-size: 15px;
+  opacity: 0.9;
+  margin-bottom: 16px;
+}
+.outcome-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 12px;
+}
+.outcome-tag {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.2px;
+}
+.tag-green { background: var(--green-dark); color: #fff; }
+.tag-coral { background: var(--coral-dark); color: #fff; }
+.tag-yellow { background: var(--yellow-dark); color: #fff; }
+
+/* RESET BTN */
+.main-reset-btn {
+  font-family: 'Jost', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  background: none;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: var(--text-mid);
+  width: 100%;
+  margin-bottom: 16px;
+  transition: all 0.2s;
+}
+.main-reset-btn:hover { background: var(--cream-dark); }
+
+/* NEW WEEK CARD */
+.new-week-card {
+  background: var(--green-dark);
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+.new-week-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.new-week-card p { font-size: 14px; opacity: 0.92; margin-bottom: 16px; line-height: 1.5; }
+.new-week-btn {
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.5);
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px 18px;
+  cursor: pointer;
+}
+
+/* WEEKLY REFLECTION */
+.reflection-wrap { margin-bottom: 16px; }
+.reflection-header {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-style: italic;
+  color: var(--text-mid);
+  margin-bottom: 4px;
+}
+.reflection-note { font-size: 13px; color: var(--text-light); font-style: italic; margin-bottom: 12px; }
+.reflection-wrap textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-family: 'Jost', sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  background: var(--bg);
+  color: var(--text-dark);
+  resize: vertical;
+  min-height: 60px;
+  margin-bottom: 10px;
+}
+.reflection-q { font-size: 13px; font-weight: 500; color: var(--text-mid); margin-bottom: 4px; }
+.save-reflection-btn {
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  background: var(--green);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  cursor: pointer;
+}
+.saved-confirm { font-size: 13px; color: var(--green); font-style: italic; margin-left: 10px; }
+.device-note { font-size: 12px; color: var(--text-light); font-style: italic; margin-top: 8px; }
+
+/* HISTORY */
+.streak-badge {
+  background: var(--blue-grey);
+  color: var(--text-dark);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+.history-record {
+  font-size: 13px;
+  color: var(--text-mid);
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+.history-empty { font-size: 13px; font-style: italic; color: var(--text-light); }
+
+/* CTA STRIP */
+.cta-strip {
+  background: var(--blue-grey);
+  color: var(--text-dark);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.cta-strip h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  line-height: 1.3;
+  color: var(--text-dark);
+}
+.cta-strip p { font-size: 14px; font-style: italic; color: var(--text-mid); }
+
+/* DISCLAIMER */
+.disclaimer {
+  font-size: 12px;
+  color: var(--text-light);
+  text-align: center;
+  line-height: 1.6;
+  padding: 16px 0 24px;
+  border-top: 1px solid var(--border);
+  margin-top: 8px;
+}
+
+/* REFERENCE GUIDE STYLES */
+.ref-intro {
+  background: var(--cream-dark);
+  border: 1px solid var(--border-strong);
+  border-radius: 10px;
+  padding: 24px 20px;
+  margin-bottom: 16px;
+}
+.ref-intro h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  font-style: italic;
+  margin-bottom: 14px;
+  color: var(--text-dark);
+}
+.ref-intro p { font-size: 15px; color: var(--text-mid); line-height: 1.7; margin-bottom: 12px; }
+.pillar-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 16px 0;
+}
+.pillar-card {
+  border-radius: 8px;
+  padding: 14px 10px;
+  text-align: center;
+}
+.pillar-card h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.pillar-card p { font-size: 12px; font-style: italic; opacity: 0.9; }
+.closing-italic {
+  border-left: 3px solid var(--coral);
+  padding-left: 14px;
+  font-style: italic;
+  font-size: 15px;
+  color: var(--text-mid);
+  margin: 16px 0 8px;
+  line-height: 1.6;
+}
+.authorship-line {
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+  color: var(--text-light);
+  margin-top: 12px;
+}
+
+/* WHAT CHANGES */
+.what-changes {
+  background: var(--blue-grey);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+.what-changes h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+.what-changes p { font-size: 15px; color: var(--text-dark); line-height: 1.7; margin-bottom: 12px; }
+
+/* ABOUT CARD */
+.about-card {
+  background: var(--bg);
+  border: 1px solid var(--border-strong);
+  border-radius: 10px;
+  padding: 24px 20px;
+  margin-bottom: 16px;
+}
+.about-card h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--coral-dark);
+  margin-bottom: 14px;
+}
+.about-card p { font-size: 15px; color: var(--text-mid); line-height: 1.7; margin-bottom: 12px; }
+
+/* PREGAME REF */
+.pregame-ref {
+  background: var(--cream-dark);
+  color: var(--text-dark);
+  border-radius: 10px;
+  padding: 24px 20px;
+  margin-bottom: 16px;
+  border-left: 4px solid var(--coral);
+}
+.pregame-ref h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--coral-dark);
+}
+.pregame-ref .sub-heading {
+  font-style: italic;
+  font-size: 15px;
+  color: var(--text-mid);
+  margin-bottom: 14px;
+}
+.pregame-ref p { font-size: 15px; line-height: 1.7; margin-bottom: 12px; color: var(--text-mid); }
+.pregame-ref h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 21px;
+  font-weight: 600;
+  margin: 16px 0 6px;
+  color: var(--text-dark);
+}
+.scripture-block {
+  border-left: 3px solid var(--coral);
+  padding-left: 14px;
+  font-style: italic;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px;
+  margin: 16px 0;
+  color: var(--text-mid);
+}
+.italic-close {
+  font-style: italic;
+  font-size: 14px;
+  color: var(--text-light);
+  margin-top: 12px;
+}
+
+/* BRIDGING CARD */
+.bridging-card {
+  background: var(--blue-grey);
+  color: var(--text-dark);
+  border-radius: 10px;
+  padding: 24px 20px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.bridging-card p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+/* REFERENCE BLOCK HEADERS */
+.ref-block-header {
+  border-radius: 8px 8px 0 0;
+  padding: 14px 20px;
+  color: #fff;
+  margin-top: 24px;
+}
+.ref-block-header.nourish { background: var(--green); color: #fff; }
+.ref-block-header.detox { background: var(--coral); color: #fff; }
+.ref-block-header.connect { background: var(--yellow); color: #fff; }
+.ref-block-header h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+.ref-block-header .block-sub { font-size: 13px; font-style: italic; opacity: 0.85; }
+
+/* REFERENCE ITEMS */
+.ref-item {
+  border: 1px solid var(--border);
+  border-top: none;
+  padding: 20px;
+  background: var(--bg);
+}
+.ref-item:last-of-type { border-radius: 0 0 8px 8px; }
+.ref-item-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--yellow-dark);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.ref-item-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+.science-pill {
+  display: inline-block;
+  background: var(--green);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 4px 10px;
+  margin-bottom: 12px;
+}
+.ref-body { font-size: 15px; color: var(--text-mid); line-height: 1.7; margin-bottom: 10px; }
+.ref-body p { margin-bottom: 10px; }
+.personal-note {
+  border-top: 1px solid var(--border);
+  border-left: 3px solid var(--coral);
+  padding: 12px 0 0 14px;
+  margin-top: 12px;
+  font-size: 15px;
+  font-style: italic;
+  color: var(--text-mid);
+  line-height: 1.6;
+}
+
+/* REF SUBSECTIONS */
+.ref-subsection {
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+  margin-top: 14px;
+}
+.ref-subsection h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+/* SPECIAL BOXES */
+.mediter-box {
+  background: var(--cream-dark);
+  border-left: 3px solid var(--green);
+  border-radius: 0 6px 6px 0;
+  padding: 14px;
+  margin: 14px 0;
+}
+.mediter-box h4 { font-size: 14px; font-weight: 600; color: var(--text-dark); margin-bottom: 8px; }
+.mediter-box ul { padding-left: 18px; font-size: 14px; color: var(--text-mid); line-height: 1.7; }
+.snack-box {
+  background: var(--green);
+  color: #fff;
+  border-radius: 8px;
+  padding: 14px;
+  margin: 14px 0;
+}
+.snack-box h4 { font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+.snack-box ul { padding-left: 18px; font-size: 14px; line-height: 1.7; }
+.breakfast-box {
+  background: var(--cream-dark);
+  border-radius: 8px;
+  padding: 14px;
+  margin: 14px 0;
+}
+.breakfast-box h4 { font-size: 14px; font-weight: 600; color: var(--text-dark); margin-bottom: 8px; }
+.breakfast-box ul { padding-left: 18px; font-size: 14px; color: var(--text-mid); line-height: 1.8; }
+.scripture-ref {
+  border-left: 3px solid var(--coral);
+  padding-left: 14px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px;
+  font-style: italic;
+  color: var(--text-mid);
+  margin-top: 14px;
+  line-height: 1.6;
+}
+
+/* CANVAS PLATE */
+.plate-legend {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--text-mid);
+  line-height: 1.7;
+}
+.legend-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.plate-caption {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--text-light);
+  margin-top: 6px;
+}
+
+/* WATER CALC IN POPOVER */
+.hydrate-note { font-size: 13px; font-style: italic; color: var(--text-light); margin-top: 8px; }
+
+/* ACCORDION WRAPPER */
+.section-accordion {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.section-accordion-btn {
+  font-family: 'Jost', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  background: var(--cream-dark);
+  border: none;
+  padding: 14px 16px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  color: var(--text-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-accordion-btn .arrow { font-size: 12px; color: var(--text-light); }
+.section-accordion-body {
+  display: none;
+  padding: 16px;
+  background: var(--bg);
+}
+.section-accordion-body.open { display: block; }
+
+@media (max-width: 520px) {
+  .pregame-cols { grid-template-columns: 1fr; }
+  .pillar-cards { grid-template-columns: 1fr; }
+  header h1 { font-size: 30px; }
+}
+</style>
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAJtklEQVR4nO3dW2wc1QHG8W9mdmfW60t8SwAbO3auBOOCnLQltKSpQpEoCKmCtOpFJA9RhfqUh6rqS2kf+lRAylOLRKWGIJVSSguFQgkIAkpDm/vNkAtxYjt2bMexvWt7vTuzu9MHkyix157LzmV9/P2kPHH2nLH01+HsbVZCiC7t3G6GuT75o2XXbimstQNbmPEubkFF7usijJgK8TNuXyZmyGSHH2F7OiFDJje8DNuTiRgyecGLsOViJ2DM5BUvWioqaMZMXiu2KVdbPEOmILg5gjjeoRkzBcVNa46CZswUNKfN2Q6aMVNYnLRnK2jGTGGz26Bl0IyZSoWdFot+HZqolMwbNHdnKjVWTc4ZNGOmUjVfmwWDZsxU6uZqlGdoEsqsoLk700JRqFXu0CSUW4Lm7kwLzcxmuUOTUG4Ezd2ZFqqb2+UOTUJh0CQUGeBxgxa+6w1zhyahMGgSCoMmoTBoEorEJ4QkEu7QJBQGTUJh0CQUBk1CYdAkFAZNQmHQJBQGTUJh0CQUBk1CYdAkFAZNQmHQJBQGTUJh0CQUBk1CYdAkFAZNQmHQJBQGTUJh0CQUBk1CYdAklIibBzU+8xwiNXVeX4snLj+zE7nxRCBrKRWViDY2Q21ogtrQDLWxGdHb7gDk+feJif9+gmuv/imQa5xP87MvQoq4SsAXPb98GmYmU9QcpfPXlDJZRnTp7VAbmhBtbIL6ZcRKVXXYV0YzMOgZ5FgZog133thx1YYmRO9ohBRVw740soFBz7Ds6Z9DW74i7Msgl/ikkITCoEkoDJqE4tsZeuiPuzDVecKv6UtCfnICen8v9P5eGH090Pt7Ef/Keix5+PGwL80To2+8guTHe8O+DEf4pNAO04RxdRBGfw/0vt4vI+5Bbmx01tCytntDuEC6jkHPkE+nkLl4fjravh4Yfb3QBy7D1PWwL41sYNAzDL3wfNiXQEXgk0ISCoMmoTBoEgqDJqEwaBIKgyahMGgSCoMmoTBoEgqDJqEwaBIKgyah8MNJNC+5LA5t5Vpody5HtKEJkdp6KEtqIGsapEgUpmHANHTk01PIjo0gNzYCY6AP+uVuZHouIp+aDPR6GTTNqWrLo6h5/Afz3mdEUlVIqgq5vAKRuqW3/sd8HpnuC0h1Hsfk4QPIJcb8vWAwaJqHUllV3ASyDK11NbTW1aj57hNIdR5D4r23oPd1e3OBBTBoCoYsI96+HvF7OpA6cQgjb7ziy47NJ4UULElC/L6voeEXv0X5+o2eT+/bDr1sx06/pp7lynO/ht7XE9h6VDw5Xo76n/wUalMLRt/8C2Ca3szrySxELlV962Es3fYzyxtc2sUzNM1iGjoy3V0wBq/AGLqC7NVBZEevwcykkc+kkU9PQZJkSKoKpbIKSk0d1MZmaC0rEVvTBlmLOVovfu8G1P9wB4b//GLROzWDJsA0kbl0AVNnTiH9xRno3V0wc9n5H4I8zKks8lMpGEMDSJ/tBABIioKy9g5UPfgQtBVrbF9C+YaNMAb7kfjg7aL+FAa9iBkDfUidPILJI58iOzLsyZxmLofU8UNIHT+EsrvuQe2TT81+fXoO1Y98D5mL55G+cNb1+jxDL2JXnv8NEu+/5VnMM02dOY3+3/0Kk8f+Z+8BsozarU9BUhTXazJo8pWpZzC85wUk9/3b1vjobQ2o/OYW1+vx3nYUiNE3X4Uci6Pi/k2WY6u+/QjG939oeY4vhDs0BWbk9ZdtvV+gLKlGvOPrrtZg0BQYM5vFyF9fsvXSXDmDpoUg09OF1OmjluNiq++GXBZ3PD+DpsCNf/y+5RhJUaC1rnY8N4OmwKW7ztn6pJ3Wusrx3AyagmeaSJ//3HKYenuj46kZNIUi09NlOcbuO4w3Y9AUiuzwkOUYpbrW8bwMmkKRS45ZjnH6qT2AQVNI8rqNH6mXZUiKszezGTSFQoLky7wMmkIhqar1oHze8ec5GDSFQqmqthyTz6Qdz8ugKRSR+mWWY3KJ2T9saoVBUyi05hWWY7LXnH/xgEFT8CQJsdXrLIcZg/2Op2bQFLjYijVQllRbjstc+sLx3AyaAle56TvWg0wTmYvnHc/NoClQanMr4u0dluPSF84gNzHueH4GTYGRlAjqvr8NkKzfVJk8etDVGgyaAlP7xI+hNi63HJefnMDkkQOu1mDQi0zdj3ZAW+H8myDFqnlsKyo2brY1NvnJXpi67mod3jlpkdGaWlDx1W8gdeooEnv/Cf2yfzcfB6bf4q7buh3lG+zdOjc7Mozkvvdcr8egF6l4ewfi7R1In+3E+H8+QqrzGJDPe7pGbM3dqNu6zda7ggAA08TI3152vTsDDHrRi61tQ2xtG3LjSaROHcXUqSNId51zHZWkKChruw+VDz6E2Kq7HD028cHbmPr8pKt1r2PQBSzZ8iiqH3vSt/kr7t9k6w5ChYwf2IeR117y+Iqmf0+l8oHNqHxgM8xcDnrvRei93TAG+mAMDyKXTCA3noBp6DANA5IsQ4qqkCurEKmpg9rQBK1lFWJr2yDHyhyvnzpxGGPv/qPov4NB0yySokBrWQWtxfm3rt1InTiMq3v+4Mld/Bk0hSr54TsY/dfrnp3fGTSFIpccw8hre5A6fczTeRk0BcrMZjHx6T6MvfN35NNTns/PoBeZwd8/i7J17Shb1z79eyjx8kDWzU9OYOLwASQ/etfXX5Rl0ItMbjyBiYP7MXFw//QvvTa1Qlu5BlpTK9TmVkRq671bKzGK9LnPpl8O/Oykq/s9OyVd2rndmx+IIyEoFZWINjYjWrcUkdqliNTVQ6mphxyPQ1Y1SNf/SRLMbBZm1kA+NTn9sl5yFMbQIPQrl2H09cC4OhD49XOHplvkJsaRO9sJ519PLQ38cBIJhUGTUBg0CYVBk1AYNAmFQZNQGDQJhUGTUBg0CYVBk1AYNAmFQZNQGDQJhUGTUBg0CYVBk1AYNAmFQZNQGDQJhUGTUBg0CYVBk1AYNAmFQZNQ5JZdu61/Y4toAWjZtVviDk1CYdAkFAZNQmHQJBQZmD5Mh30hRMW43jB3aBIKgyah3Aiaxw5aqG5ulzs0CeWWoLlL00Izs1nu0CSUWUFzl6aFolCr3KFJKAWD5i5NpW6uRufcoRk1lar52pz3yMGoqdRYNckzNAnFMmju0lQq7LRoa4dm1BQ2uw3aPnIwagqLk/YcnaEZNQXNaXOOnxQyagqKm9aKivPSzu1mMY8nKqSYTbOol+24W5PXim2q6NehGTV5xYuWPI2RRxByw8tN0ZfdlWGTHX78393X4wLDpkL8PKYGdv5l3ItbUM+1Qn1Cx8jFFOYLBf8HqyD1Ey+j15sAAAAASUVORK5CYII=">
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiRm91bmRhdGlvbiAxNSIsInNob3J0X25hbWUiOiJGMTUiLCJzdGFydF91cmwiOiIuIiwiZGlzcGxheSI6InN0YW5kYWxvbmUiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2UwNzA2MCIsInRoZW1lX2NvbG9yIjoiI2UwNzA2MCIsImljb25zIjpbeyJzcmMiOiJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQU1BQUFBREFDQVlBQUFCUzNHd0hBQUFLWGtsRVFWUjRuTzNkVzJ3Y1Z4MEc4Ry8yTXJ1KzM1M1lqdVBZY1c1TlVxVUZSYUpLRllXbXBBbXRta1lDcWVVbGdFU2hDQWh0WDRwRVFIM0pBOUNHaTBDZ0F1RUJrTGhGUUVLaFRSQUk5NkZKZzVPUXhHcmNZQ2V4dmI3RThYVjM3WjNkR1I0Mk1iblk2OW01N003Ni8vMmt5SDQ0Yzg2eDlQL21uSm5zemlqSXM5NEQrNDE4ejRIeVo5WGhJMG8reDgvNTRDeDR5aVRYZ2NqSllDeDZzaUlYWVhCMUFCWStPY0hOSUxqU01RdWYzT0JHRUJ6dGtJVlB1ZUJrRUJ6cGlJVlArZUJFRUh4Mk8yRHhVNzQ0VVh1MkFzRGlwM3l6VzRPV2xoQVdQbm1SbFMxUjFpc0FpNSs4eWtwdFpoVUFGajk1WGJZMWFqb0FMSDRxRk5uVXFxa0FzUGlwMEppdFdkdTNRWWtLMmFJQjRObWZDcFdaMnMwWUFCWS9GYnJGYW5qQkFMRDRhYW5JVk11OEJpRFI1ZzBBei82MDFDeFUwMXdCU0xUN0FzQ3pQeTFWODlVMlZ3QVM3YTRBOE94UFM5MjlOYzRWZ0VTYkN3RFAvaVRGbmJYT0ZZQkVZd0JJTkIvQTdRL0pjN3ZtdVFLUWFBd0FpY1lBa0dnSzkvOGtHVmNBRW8wQklORVlBQktOQVNEUkdBQVNqUUVnMFJnQUVvMEJJTkVZQUJLTkFTRFJHQUFTalFFZzBSZ0FFbzBCSU5FWUFCS05BU0RSR0FBU2pRRWcwUmdBRW8wQklORVlBQktOQVNEUkdBQVNqUUVnMFJnQUVvMEJJTkVDVmc0cVdyOFo5YysvNlBSY0hCZjU5amVRNkwrV3MvR1VRQkRCWlkwSU5qUkJiVmh4NjJjei9KVlZpeDZibXBwRTM4R3Y1R0NXNWhSdmZoaDFuL2xTdnFjeHI2c3ZmUmJRZFVmNnNoUUE4UlFGd2RwbENEWTBJZGl3NGxheHIwQ3d0aDd3Y1ZFdEpBekFJdndWVlhlY3pXOFYrcklHS0VFMTMxTWpCekFBR1FTcWE5SDA5Vy9sZXhya0lxN1hKQm9EUUtJeEFDUWFBMENpdVhvUlBQN21IekR4MXAvZEhNSlRqRlFTeWVGQkpDTDkwQ0xYMHo4SCsxSDdxYzhoMU5xZTcrazVidnIwT3hqOTFSdjVub1l0dkF0a2hXRWdPVHFDUktRUFdxUWYybUJmK3ZmaHdRWCtnNGF2WWZNcUJpQVR3MEJxWWp4ZDNJUHBZay8vUGdCRFMrUjdkdVFBQmlDRDVOZ28rcjc1MVh4UGcxekVpMkFTalFFZzBSZ0FFbzBCSU5FWUFCS05BU0RSR0FBU2pRRWcwUmdBRW8wQklORVlBQktOQVNEUitHRTRzaTFRVTRkUWF6dEN6YTBJMURjZ1VGMExmMmtaRkRVRXhlZURyaVZnYUFub3NSaFM0emVSSEw4SmJXZ0FpYjZyU0Z6dmhSNlA1Vy91ZVJ1WkNsNjRiUzBhWHptRVlQM3lqTzE4b1RBUUNzTmZXbjUvVzhQQWJPOFZ4QytkUTdUelhTUkhSMXljOGYwWUFMSXNVRk5udnhORlNhOGVyZTJvM0xNUDhjc1hNZlhQdHhIdk9tKy9ieE1ZQVBJT1JVSFJ1azBvV3JjSnN6M2RHUHZUYnpEYis0R3JRL0lpbUR3cDFMb0d5Ny84TlZUdGZkYlZwL0M1dWdKVTd0Nkh5dDM3M0J6aVBuMEhEeUExTlpIVE1ja2xpb0x5N1I5RGVNMEdqTHp4WFNUSFJoMGZnaXNBZVo3YTJJemxMeDZFMnJ6SzhiNFpBQ29JL3RKeUxQdjh5MUFibXgzdGx4ZkJaSTJ1UXh1S0lORi9OWDAvUDlJSFBUb05QUjVMLzV1ZGdlSVB3QmNLd1Y5ZUNYOTFMZFNtbFFpMXRDSGN2dDdTdnQ1WFhJTDZMN3lNd2RkZWRXdzd4QUNRYVhvc2l0ajVNNGhmUEl0NDl5VVlzN01aMnh0NkFpa3RnZFQwRkRCd0hmRUxuUURTTHhJcDN2d1FTaC9aZ1hENytxem00Qzh0UiszK0Z6RDB2VU13VWtuTGY4dHREQUJsWmhpSVg3Nkk2WTYvSTk1MUhrWXFaYi9McElabzV5bEVPMDhodkhvZHFwNTVGbXBUaStualF5dmJVUEhFWG93Zi81M3R1VEFBTkM4am1jVDBxUTVNbmp5ZWZ1S2RTMmF1dkkvSWE2K2ljdGZUcUhqOEtVQlJUQjFYdm1NWG9xYzdiTStORjhFMHIzalhlWXorK3FldUZ2OGNYY2Y0bTBjeDhvc2ZtbDVoRkg4QWxVOTkwdmJRZkRndWVVYnMzSHU0b2Y4SWRaLytvcW1Wb0hqakZnVHJHNkFOUnl5UHlSV0FQQ1gybnpNWS8rdFJjNDBWQldYYkg3YzFIZ05BbmpQeDlqRWtydmVhYWx2ODRJZHR2Wm1UQVNEdk1RemNQUHBMVTAzOXBXVUlyMTVuZVNnR2dEeHB0dWNEekZ4NTMxVGJjUHNHeStNd0FPUlowZFB2bUdwbjUrMDdEQUI1VnV4Q0oyQXMvbllkdFdtbDVURVlBUElzUFRwdDZoYW5yN2dFdm5DUnBURVlBUEkwYlhEQVZEdC9WWTJsL2hrQThqU3pYNUwzRjVkWTZwOEJJRS9UWitLbTJpbHF5RkwvREFCNW1xRnBwdG9wZ2FDbC9oa0E4alFsYUs2d2phUzVvTnlMQVNCUE0zdDN4MGhrL25MT2d2MWJPb29vUjh3K2ZNdnN0Y0s5R0FEeXRPRHlSbFB0a2pkdldPcWZBU0RQOHBXVUlsamZzR2k3MjEvRXR6U0dwYU9JY3FCNDR4WlRYNHpSSW4yV3gyQUF5TE5LdG00ejFXNjJ4L3J6UXhrQThxUlF5MnJUbi9NMys3SHArVEFBNUQyS2dxcDl6NWxxcXMvRU1YUDVrdVdoR0FEeW5JckhQbzdReWpaVGJXUG56OWg2UUJZRFFKNVN0T2toVk80eC8wVHhxWTZUdHNaakFHaE84WU1mUXRXVG40Q3ZxRGcvNDI5K0dIWDdYekQ5Y0t5Wnk1ZE1mM2wrSVh3eUhNMVJWQlhsaisxQjZVZTJZK3BmSnpEVmNUTDlYRSszK1h5bzJQa2tLcC9ZYTdyNFlSZ1lPL1piMjBNekFIUWZYM0VKS25ZOWpmS1A3azQvdy9OVWg2MDdMWm1FV3RlZytwbm5zbjcyLzFUSFNkdG5mNEFCb0F5VW9JclNyZHRRdW5VYmttT2ppRi9vUlB6aU9jejBkRnYrOEJrQUtJRUFpalp1UWRrak94QmUrMERXeDJ1UlBvd2RzLzlnWElBQk1LWCsrWmRRdEg2VHEyUDR5OHJSOHZyUExSK3ZEUTlpNE5BckRzN29ib0dxR3BROXVoTmxqKzRFZEIySi9tdEk5RitETmhTQk5qS0kxT1E0VWxNVE1HWm1ZR2dhREQwRnhSK0FjdXY5QUlIcVdxaE56ZW43KyswYm9LalczdnVseDZJWS90bjNiUVh3cnIvTGtWNUlGcDhQYXZNcVYxNVpsSWtlajJIb3g5OUI4c2F3WTMweUFGUVFVdE9UR1A3SjY0N3MrKy9FQUpEbnpWNzlMMGFPL0FDcDhUSEgrMllBeUxPTVpCSVRKNDVoOHNSeFIxNkhOQjhHZ0x6SE1CQTc5eDdHL3ZKN0pFZUdYQjJLQWFBNTBYKy9pK1RvRFlUWFBvQ2l0UnVodHJSQjhmdHpOcjRlanlGMjloUW0vL0dXclpkZVpJTUJvUC9UZGN6MmRHTzJweHNUZi9zakZEV0VjTnRhcUMxdFVGZTBRRjNSZ2tCbHRhTkRKc2RHTWRQZGhmaWxjNGhmUEFzajZjNVdaeUZLNzRIOWl6OTlsT2dXWDBrcDFNWm1CR3JxRUtpcWdiK3FKdjJ6dEF5S0dvS2lodUJUVlNoQkZZYXV3MGhxTUxRRTlPZzBVcE1UU0UyTVFSc1poRGJRaDBTa3ovU1QzOXpDRllDeW9rZW5NZFBkQlhSMzVYc3FqdUNuUVVrMEJvQkVZd0JJTkFhQVJHTUFTRFFHZ0VSakFFZzBCb0JFWXdCSU5BYUFSR01BU0RRR2dFUmpBRWcwQm9CRVl3QklOQWFBUkdNQVNEUUdnRVJqQUVnMEJvQkVZd0JJTkFhQVJHTUFTRFFHZ0VSakFFZzBCb0JFWXdCSU5OK3F3MGRNdnBpVmFHbFpkZmlJd2hXQVJHTUFTRFFHZ0VUekFlbTlVTDRuUXBSTHQydWVLd0NKeGdDUWFITUI0RGFJcExpejFya0NrR2gzQllDckFDMTE5OVk0VndBUzdiNEFjQldncFdxKzJ1WUtRS0xOR3dDdUFyVFVMRlRUWEFGSXRBVUR3RldBbG9wTXRaeHhCV0FJcU5BdFZzT0xib0VZQWlwVVptcVgxd0FrbXFrQWNCV2dRbU8yWmsydkFBd0JGWXBzYWpXckxSQkRRRjZYYlkxbWZRM0FFSkJYV2FsTlc4WGNlMkMvWWVkNElpZllPU25idWd2RTFZRHl6VzROMnI0TnloQlF2amhSZTQ0V0w3ZEVsQXRPbm5SZE9Yc3pDT1FHTjNZYnJtNWZHQVJ5Z3B2YjdKenMzeGtFc2lJWDE1YzV2NEJsR0NpVFhOOVV5ZnNkSEFaQ3RuemZSZndmQ3hZekFjcFVXSWtBQUFBQVNVVk9SSzVDWUlJPSIsInNpemVzIjoiMTkyeDE5MiIsInR5cGUiOiJpbWFnZS9wbmcifSx7InNyYyI6ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBZ0FBQUFJQUNBWUFBQUQwZU5UNkFBQWVRMGxFUVZSNG5PM2RlNURkNVhuWThlZWNQWHYyS21sMXRZU0VKQVFZc0pFeE9EYmd4TVpwYmRlWHhrNWp0Mm1iMkhYU3BzM0YwN3FUVHY5S1o5enB0RE9kVGhJbmFST2ExZ214MjdoeDB6YTRqbU9jK2tJY2dqRUdEQWdoY1JFU3VyTmFwTlhlejU1TC81Q0VCUWpwckhiMzkvdWQ4MzQrTXhvWWJ1OXpEbU0vMzMzUGhWS1FxZjJmK2tRcjd4a0FpbWo3Wis0cTVUMURTanpaeThDU0IxaGE0bURwZVVJWHliSUh5SWNvV0J4UDNnSlorQURGSkFnV3hwUFZCa3Nmb0xPSWdVdnpCRjJBaFEvUVhRVEJxM2xDem1QeEEzUTNJZkFEeVQ4UmxqNUFtbEtQZ1dRZnZNVVBRRVM2SVpEY2c3YjRBYmlRMUVJZ2lRZHI2UU93RUNuRVFGYy9RSXNmZ01YbzVoQW81ejNBY3JIOEFWaXNidDRsWFZjMjNmd3ZDNEQ4ZE50dFFOYzhHSXNmZ0N4MFN3aDAvSU93K0FISVE2ZUhRRWUvQjhEeUJ5QXZuYjZET3JKZU92MUpCNkM3ZE9KdFFNZmRBRmorQUJSTkorNm1qZ3FBVG55Q0FVaERwKzJvanJpeTZMUW5GWUMwZGNKTEFvVy9BYkQ4QWVnMG5iQzdDaDBBbmZBRUFzQ0ZGSDJIRmZLS291aFBHZ0FzUkJGZkVpamNEWURsRDBDM0tlSnVLMVFBRlBFSkFvQ2xVTFFkVjVnQUtOb1RBd0JMclVpN3JoQUJVS1FuQkFDV1UxRjJYdTRCVUpRbkFnQ3lVb1RkbDJzQUZPRUpBSUE4NUwwRGN3dUF2Qjg0QU9RdHoxMllTd0JZL2dCd1JsNDdNZk1Bc1B3QjRPWHkySTJaQm9EbER3QVhsdldPekN3QUxIOEF1TGdzZDJVbUFXRDVBMEI3c3RxWnl4NEFsajhBTEV3V3UzTlpBOER5QjRETHM5dzdOUGR2QWdRQXNyZHNBZUNuZndCWW5PWGNwY3NTQUpZL0FDeU41ZHFwU3g0QWxqOEFMSzNsMkszZUF3QUFDVnJTQVBEVFB3QXNqNlhlc1VzV0FKWS9BQ3l2cGR5MVN4SUFsajhBWkdPcGRxNzNBQUJBZ2hZZEFINzZCNEJzTGNYdVhWUUFXUDRBa0kvRjdtQXZBUUJBZ2k0N0FQejBEd0Q1V3N3dWRnTUFBQW02ckFEdzB6OEFGTVBsN21RM0FBQ1FvQVVIZ0ovK0FhQllMbWMzTHlnQUxIOEFLS2FGN21ndkFRQkFndG9PQUQvOUEwQ3hMV1JYdXdFQWdBUUpBQUJJVUZzQjRQb2ZBRHBEdXp2YkRRQUFKT2lTQWVDbmZ3RG9MTzNzYmpjQUFKQ2dpd2FBbi80Qm9ETmRhb2U3QVFDQUJBa0FBRWpRYXdhQTYzOEE2R3dYMitWdUFBQWdRUmNNQUQvOUEwQjNlSzJkN2dZQUFCSWtBQUFnUVFJQUFCTDBxZ0R3K2o4QWRKY0w3WFkzQUFDUUlBRUFBQWw2V1FDNC9nZUE3dlRLSGU4R0FBQVNKQUFBSUVFQ0FBQVM5RklBZVAwZkFMcmIrYnZlRFFBQUpFZ0FBRUNDQkFBQUpFZ0FBRUNDeWhIZUFBZ0FxVGkzODkwQUFFQ0NCQUFBSkVnQUFFQ0NCQUFBSkVnQUFFQ0NCQUFBSktqa0k0QUFrQjQzQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQWtTQUFDUUlBRUFBQW1xNUQzQUsyMzU5SzlGejZyVmVZL0JaVGo5cmEvR3lidi9LTzh4dWs2cFVvbmVUVnVpdW1WN1ZMZHNqZXFXYlZHOTRzb29WWHFYL2V6NVk0Zmp5TC8vbFdVL2h3c2JlT05Oc2VFZmZTcnZNYmlBbWQyUHhndi81VE41ajdFb2hRc0FTRm1wcnkrcW03ZEdkZk8yTTR0K3k3YW9idHdjVVhaWkJ5d3RBUUE1S1E4Ty9XREpuMTM0dmV0ZkYxRXE1VDBha0FBQkFCbm9XVGx5ZHRtZnZjTGZzajBxcTlmbVBSYVFNQUVBUzZ5eWR2MlphL3d0UDdqRzcxbXhLdSt4QUY1R0FNRGxLcFdpZC8zR00wdit5clBYK0p1M1JubHdLTy9KQUM1SkFFQWJTajA5MGJ0eDg5bWY3TGVmZmQzK3lpaFYrL0llRGVDeUNBQjRoVkp2TmFwWGJIbnB0ZnJxNXEzUnUybExsQ3IrNXdKMEQvK1BSdExLL1FPdmVyMitkOE1tSDdzRHVwNEFJR2tiZnY1ZlJOKzJIWG1QQVpBNVArWUFRSUlFQUFBa1NBQUFRSUlFQUFBa1NBQUFRSUlFQUFBa1NBQUFRSUlFQUFBa1NBQUFRSUlFQUFBa1NBQUFRSUlFQUFBa0tObi9HTkNKejkwWlU0ODhrUGNZQUxtWmZXcDNIUCtkLzVEM0dPVEVEUUFBSkNqWkd3RG9HSzFXekk4ZWo5cWhBMUU3ZkNCcWh3NUVhM1kyTnY3emY1WDNaRUFIRXdCUUlLMUdQZWFQSFhuWnNxOGRQaGl0MnR6TC9yckt1ZzA1VFFoMEN3RUFPV25WNXFKMjVPRFpKZjk4MUE0ZWlQbGpoNlBWcU9jOUdwQUFBUUFaYUU1UG5WbnlodzY4OUd0KzlGaEVxNVgzYUVDaUJBQXNzY2I0cVI5YzN4OTZQbXFIOWtmOTVGamVZd0c4akFDQXk5VnFSWDFzOU94UDl2dlBMdnNEMFpnOG5mZGtBSmNrQUtBZHpXYk1Iejk2M2svMloxNjNiODdPNUQwWndHVVJBUEFLcmZwOHpCODU5UEpyL0NNSG8xV2Z6M3MwZ0NVakFFaGFjM1k2WnAvZEcvT0huNCs1YzIvT08zNGtvdG5NZXpTQVpTVUFTTm9MZC81cTNpTUE1TUpYQVFOQWdnUUFBQ1JJQUFCQWdnUUFBQ1JJQUFCQWdnUUFBQ1JJQUFCQWdnUUFBQ1JJQUFCQWdnUUFBQ1JJQUFCQWdnUUFBQ1JJQUFCQWdnUUFBQ1JJQUFCQWdnUUFBQ1JJQUFCQWdnUUFBQ1JJQUFCQWdnUUFBQ1JJQUFCQWdnUUFBQ1JJQUFCQWdnUUFBQ1JJQUFCQWdnUUFBQ1JJQUFCQWdnUUFBQ1JJQUFCQWdnUUFBQ1JJQUFCQWdnUUFBQ1Nva3ZjQUFIU0c4dUJRVk5hdWo4cWFkV2QrbmYzOTh1QndsS3Q5VWFwV28xVHRlK24zbzlXS1ZyTVJyVVlqb3RHSTV0eHN0R1pub3prN0U4M1o2V2hNVGtUejlIZzBKc2FqY2ZwVTFNZE94UHpZQzlHY21zejdvU1pCQUFEd0t1VysvcWhlZVZWVXQxMFZmVnQzUk4rMkhkR3phdlhDL2lHbFVwVEs1U2hWZXMvOE13ZUgydnJibW5PelVYL2hXTlNPSG9yNW80ZWlkdVJnMUo1L0xwcXpNd3Q5R0Z5RUFBQWdvbHlPdnUzWHhPQWJiNHFCRzk0VXZSczNSNVJLK1l6UzF4L1ZLN2RIOWNydFAvaURyVmJNSHo4YWN3ZWVqYmxuOThiTVU3dWpNWDR5bC9tNmhRQUFTRlNwcnkrR2Jya3RCdDc0NWhpNC9zYTJmMExQUmFrVXZSdXZpTjZOVjhUd3JlK0lpSWo1WTBkaVp1K3VtSG44NFpqZDkxUkVxNVh6a0oxRkFBQWtxbS9iMWRIM3NhdnpIdU95blF1Q2xYZThOeHFURXpIeitNTXg5ZEQ5WXFCTkFnQ0FqdGN6dkNLR2I3OGpobSsvSStwam96SDU0SDB4K1oxN296RitLdS9SQ2tzQUFOQlZLbXZYeDhqN2ZqeFd2ZWZIWXZyUjc4WEVYM3d0NWc3c3kzdXN3aEVBQUhTbFVrOVBETjF5YXd6ZGNtdk1Qck1ueHUrNU8yYWYyWlAzV0lVaEFBRG9ldjNYWEIvOTExd2ZzOC91alZQLzkzL0czSUZuOHg0cGQ3NEpFSUJrOUY5OVhXejgxSy9FdW8vL1FsVFdyTXQ3bkZ5NUFRQWdPVU0zdnkwR2Q5NGM0L2ZjSGVQZitMT0laalB2a1RMbkJnQ0FKSlVxdlRIeXdZL0dwbC8rZEZTM1hwWDNPSmtUQUFBa3JYckZsYkhwbi8xS3JIcnZqK1gyN1lkNVNQWWxnSFVmLy9sWTkvR2Z6M3VNam5Mc3QvNWR6TzE3T3U4eEFKWmV1UndqNy8rSkdManV4aGo5L0ozUk9OWDlYelBzQmdBQXp1cmI4ZnJZOU11Zmp2NnJyOHQ3bEdVbkFBRGdQRDNESytOMXYvZ3ZZOFdQL1BXOFIxbFdBZ0FBWHFsY2pqVWYrZWxZL2FHZjdOcjNCUWdBQUhnTkszLzBmYkh1WS84a1NqM2Q5NVk1QVFBQUZ6RjA4NjJ4L21kK3Flc2lRQUFBd0NVTXZQSE5zZjVuUHhtbFN2ZEVnQUFBZ0RZTXZPR21XUGZ4WDRnb2Q4ZnE3STVIQVFBWkdOeDVTNno5Nk1meUhtTkpkTTlkQmdCTG9qRnhPdXFqeDJQK3hQRm9USXhIYytKME5DWk9SMlB5ekc5YnRibG8xZXZScXMrZitUVS9IeEVSNWQ1cWxIcXJVZXJ0UGZPcjJoYzlLMGVpTXJJNmVsYWQvVFd5T3FvYnQwVFBxcEY4SCtRaUROLytycWlQbjRyeGUrN09lNVJGRVFBQWlXck9URWZ0MElHb0hYd3Vhb2Vlai9uUlkxRWZQUjdOdWRuTCsrZk56VWE4NnU4OWNNRy90bWQ0UlZRM2I0dmVMVnVqYjh1MjZMLzJEVkVlR3I2c2MvTXc4amMrSFBOSERzWDA0dy9sUGNwbEV3QUFpWmdmUFJhelR6MFpjL3YyeHR6Qi9WRS84VUpFcTVYTExJM0ppWmpadXl0bTl1NDY4d2RLcGVpNzhxcm92MkZuREZ4L1kvUnQzVkhzMTlwTHBWajNVejhYUjMvaldNd2ZQWnozTkpkRkFBQjBxY2JFNlpqZCswVE1QcjA3WnAvYUhmVlRMK1k5MG10cnRXTHUrWDB4OS95K0dML243dWhaTlJMRGIvMlJHTDcxSFZGWnR5SHY2UzZvMU5jWDZ6L3hTM0gwVno4ZHJWb3Q3M0VXVEFBQWRKSEdxWk14L2RqM1l2cXhoMkoyMzFPNS9ZUy9XSTN4VXpIKy83NGM0MS8vMCtpLytyb1lmdnU3WXVqTmJ5dmN0L0wxYnRnVWEzNzg3OGZZRisvS2U1UUZFd0FBSGE0eE1SNVQzN3MvcGg5OU1PYWVmNjVqbC80RnRWb3grOHllbUgxbVQ0emY4NlVZZWQrSFkvQ210eFlxQkladnZ5Tm1ubndzcGg5L09POVJGa1FBQUhTaVpqTm1kajhha3c5OE82WjNQeHJSYk9ZOTBiS2JQMzRrUnYvZ2Q2SjMwNWRpOVFjK0VnTTMzcHozU0M5Wjg5R1B4ZXpUVDBaemRpYnZVZG9tQUFBNlNIMXNOQ2IrNnBzeDllQjkwWmc0bmZjNHVaZy9lamhlK094dnh1Qk5QeFJyUHZMVDBiTmlWZDRqUmMvS2tWajlvYjhUWTEvOGc3eEhhWnNBQU9nQWMvdWVqdFAzM25QbW1ybWJydmdYWWZyUjc4WHMwMC9HNmcvLzNSaCsyNC9rUFU0TTMzWkhURDd3N1pnN3NDL3ZVZG9pQUFDS3F0R0lxWWNmaU5QZittclVEdTdQZTVwQ2FrNVB4ZGdYUGhzenU3NGY2MzdxNTZMVTE1ZmZNS1ZTclA3dzM0dGp2L2x2ODV0aEFRcjhJVXVBdE0zczJSVW5QbituNWQrRzZjY2ZpcU8vOFcraVBqYWE2eHg5VjEwVGcyOStXNjR6dEVzQUFOQVY1bzhlanFPLzlxOWo5cW5kdWM0eDh2Ni9WYWhQS2J3V0FRQkExMmhPVDhVTHYvdnJNZlBFbzduTjBMdGhZd3pkWFB4YmdHVGZBM0RpYzNmRzFDTVA1RDBHQUV1czFhakg2Ty8veDFqL3M1K01nVGZjbE1zTXE5N3pvWmg2NUx1RmZzT21Hd0FBdXM2NUNKaDU4ckZjenUvZGVFVU1YSGRqTG1lM1N3QUEwSlZhOVhxTTN2V2ZvbmJrWUM3bnIzam51M001dDEwQ0FJQ3UxYXJWWXZUM2ZpdWEwMU9abnoxdy9jN0Mvb2VNSWdRQUFGMnVQallhSno1L1ovYXZ4NWRLTWZ6Vy9MK2c2TFVJQUFDNjNzeWVYVEgrNTEvTy9OeWhIN3E5c0I4SkZBQUFKR0g4ejc4VTlkSGptWjVaV2JNdStxNjZOdE16MnlVQUFFaENxMTZQc1QvK1hPYm5EcjdwTFptZjJRNEJBRUF5WnAvYUhWTVAzWi9wbVlNRitzOFduMDhBQUpDVVUzLzZ2eUthemN6T3E2eGRINzJiTm1kMlhyc0VBQUJKcVo4Y3kvd1dvSWhmQ2lRQUFFak8rTmUva3VuSEF2dXZ1VDZ6czlvbEFBQkl6dnp4SXpIOStNT1puZGUzNC9XRit6aWdBQUFnU1pNUGZEdXpzOG9EZzFIZHRDV3o4OW9oQUFCSTB1emVYZEdjbXN6c3ZPcVdiWm1kMVE0QkFFQ1NXbzFHVEQvMlVHYm5WYS9jbnRsWjdSQUFBQ1JyNnVFSE1qdkxEUUFBRk1Uc3ZyM1JxczFsY2xidmhrMlpuTk11QVFCQXVwck5tRHV3TDVPanlvTkQwVE84SXBPejJpRUFBRWphM0hOUFozWldaZjNHek02NkZBRUFRTkxtOW1VWUFHdlhaWGJXcFFnQUFKSTJkK0Raek03cVdiVTZzN011UlFBQWtMVG03RXcwcDZjeU9hc2lBQUNnT09wam81bWMwN055SkpOejJpRUFBRWhlZmV5RlRNNHBEdzVsY2s0N0JBQUF5YXVQbmNqa25QTEFZQ2JudEVNQUFKQzh4c1I0SnVjSUFBQW9rR2F0bHNrNXBiNitUTTVwaHdBQUlIbFpmUjF3cWR5VHlUbnRFQUFBSkMrekFPaXBaSEpPT3dRQUFNbHJaaFFBVVhFREFBQ0ZVWXBTTmdlMXNqbW1IUUlBZ09TVnF0VnNEbW8wc2ptbkRRSUFnT1NWcXRtOE83L1ZxR2R5VGpzRUFBREp5eXdBbW00QUFLQXd5aG05Qk5DYXkrak5obTBRQUFBa3IyZkZxa3pPYWM1T1ozSk9Pd1FBQU1tcnJGMlh5VG5OR1FFQUFJVlJXYnNoazNNRUFBQVVTR1ZOTmpjQWpkUFovRWVIMmlFQUFFaGF1WDhneWtQRG1aelZPSFV5azNQYUlRQUFTRnJmdHFzek82c3hMZ0FBb0JENmRseWIyVm4xa3k5bWR0YWxDQUFBa3RaM1ZYWUJNRDk2TExPekxrVUFBSkN1Y2puNnR1M0k1S2hXYmM1TEFBQlFCUDA3cnN2c2E0Q0w5Tk4vaEFBQUlHRkR0OXlhMlZtMXd3Y3pPNnNkQWdDQUpKVjZlbUx3VFcvSjdMemF3ZjJabmRVT0FRQkFrdnF2dXpHenovOUhDQUFBS0lUaFc5K1IyVm10ZWoxcWg1L1A3THgyQ0FBQWt0TzdZVk1NN3J3bHMvUG1EandicmZwOFp1ZTFRd0FBa0p5VjcvNWdSS21VMlhtelR6K1oyVm50RWdBQUpLV3llbTBNM1hKYnBtY0tBQURJMmNnSFBoS2xucDdNem10T1RjYmMvbWN5TzY5ZEFnQ0FaUFJmZTBNTS9kRHRtWjQ1cy92UmlHWXowelBiSVFBQVNFS3BVb2sxZi92am1aODd2ZXVSek05c2h3QUFJQW1yM3ZPaDZGMi9NZE16bXpQVE1iUDdzVXpQYkpjQUFLRHI5Vi8zeGxqMW5yK1orYm5UMy85dTRUNytkNDRBQUtDclZkYXVqL1VmLzRWTVAvWjN6dVNEOTJWK1pyc0VBQUJkcTlSYmpmVS84OGtvRHc1bGZuYnR5TUdZZTY1NDcvNC9Sd0FBMEpWS1BaVlkvNGxmak9ybXJibWNQM0h2MTNJNXQxMENBSUN1VStxcHhQcWYrV1FNdk9HbVhNNXZURTdFMU1NUDVISjJ1d1FBQUYzbHpQTC9wUmg0WXo3TFB5TGk5TGUrV3RnMy81MVR5WHNBZ0ZTdGVNZTdvMmZsU0V6Y2UwODBKaWZ5SHFjcmxBZUhZdjAvK01Yb2YvMGJjcHVoT1RVWkUzLzU5ZHpPYjVjQUFNaEplV0FnVnIzN2c3SHluZStKaWZ1L0ZhZS8rV2ZSR0QrVjkxZ2RxM2ZqNXRqd0QvOXBWTlp0eUhXTzhXOThKVnB6YzduTzBBNEJBSkN6VXJVYUsrOTRiNno0NGI4V2s5Lzl5emo5amE5RWZXdzA3N0U2eXVET1cyTGRULzNqS1BYMTVUcEhmV3cwSnY3aXozT2RvVjBDQUtBZ1NwVktySGo3dTJMRjdYZkV6SjdIWStLK2I4Yk1rNDhWOG52a2k2SThNQmlyUC9TVE1YemJPL01lSlNJaVRuN3BqNkpWcitjOVJsc0VBRURSbEVveGNNT2JZdUNHTjBYOTVGaE1mdWZlbUx6L0w2SXhNWjczWklVeXVQTXRzZWFqUHgwOUswZnlIaVVpSW1hZjJoM1RqejJVOXhodEV3QUFCVlpadlRaRzN2OFRzZXE5SDQ2WjNkK1BxWWNmaUpuZGowYXJWc3Q3dE56MGJ0d2NJeC80aVJqY2VVdmVvN3lrVlp1THNTL2VsZmNZQ3lJQUFEcEFxYWNuQm5lK0pRWjN2aVZhdGJtWWZ1TDdNZjNJZ3pIejVHT0YvN2paVXVuZHNDbFd2ZS9ETWZUbXQrWHl0YjRYYy9MTGY5eHg3OXNRQUFBZHBsVHRpNkdiYjQyaG0yK041dHhzekR6eC9aalpzeXRtOXo0UmpkT244aDV2eWZWZmZWME12LzFIWStqTmI0MG9GKy9yYTJiM1B0RVJIL3Q3SlFFQTU1VExzZTFYUDV2M0ZJWFN1M0Z6YlB2MTM4OTdqTFpNNzNva1JqLzdtM21Qa2JseVgzOE0zWEpiRE4xeVcwUkV6Qjg5SEROUFBSR3plM2JGN0w2OUhmdFNRYy9La1JoKzZ3L0g4RzN2elAxamZSZlRPSDBxVHZ5MzM0MW90ZkllWmNFRUFFQVg2ZDIwT1hvM2JZNlZkN3czV28xNnpCODVGSE1IbjR2YTg4OUY3ZUQrcUIwN1hNeFBGWlJLVWQyeUxRWnUyQmtEMTc4cCtyYnRLT1JQK3kvVGJNYUp6Ly9uYUV5ZXpudVN5eUlBQUxwVXFhY1MxU3UzUi9YSzdSRnYvOUdJaUdqVmFsRTdmQ0JxUnc5SGZmUjQxRThjai9rVEwwVDl4QXVadnBlZ1BEUWMxYzFibzdwbFcxUzNiSXYrYTk4UVBjTXJNanQvS2J6NGYvNHdacC9aay9jWWwwMEFBQ1NrVksxRzMxWFhSdDlWMTc3OFQ3UmFVUjgvR2ZVVEwwUmo0blEwSjA5SFkzSWltcE1UMFRqMyt6TlRaejdqWHE5SHF6NGZyVWJqekcvUGZ1NjkxTnNicFVwdmxIdXJFYjI5VWE3MlJjL0trZWdaV1IyVlZhdWpaOVhxNkJsWkU5V05tNk5uWkhVT2ozN3BUSHo3NngzNXV2LzVCQUFBRWFWU1ZFYldSR1ZrVGQ2VEZONzBZdy9GaTMveWgzbVBzV2dGZjRFRkFJcGpacyt1T1BHNU80djVQb29GRWdBQTBJYlpwNStNMGQvN3JXZzFPdU9yZmkvRlN3QUFjQWt6VDN3L1J1LzY3YTc2MGlVQkFBQVhNZlc5KytQRUYvNXJWMXo3bjA4QUFNQ0Z0RnB4NnA2N1kveWV1L09lWkZrSUFBQjRoZFo4TGNhKzhObVlldVM3ZVkreWJBUUFBSnhuL3ZpUkdMM3J0MlArMk9HOFIxbFdBZ0FBenBwODhMNTQ4WTgvSDYzYVhONmpMRHNCQUVEeUdoUGpNZmJGUDRpWlhZL2tQVXBtQkFBQTZXcTFZdkxCKytMazNmOGptdE5UZVUrVEtRRUFRSkpxQi9mSGkvLzd2OGZjL21meUhpVVhBZ0NBcE5SUGpzWDRWLzhrSmgrOEw2TFZ5bnVjM0FnQUFKTFFHRDhWNDEvL2NreisxYjFkODNXK2l5RUFBSEp5K2h0Zmpkcnp6MFgvOVR0ajRQb2JvL2QxVitROVVsZWFQM1k0VG4venF6SDEwSGNzL3ZNSUFJQ2N0T3J6TWJOblY4enMyUlVuSTZLeWVtMzBYMzlqREZ5L00vcXZ2U0hLQTRONWo5aTVtczJZZnVLUm1QeXJiOFhNM2llU3Z1cC9MUUlBb0NEcUo4ZGk4djU3WS9MK2V5TktwYWhlc1RYNnI3a3UrcTYrTHZwM3ZEN0tROE41ajFoNDgwY1B4ZFJEMzRuSjcvNWxOQ2JHOHg2bjBBUUFRQkcxV2xFN2ZDQnFodzlFM1B1MWlGSXBlamR1UGhNRTI2K0p2cTA3b3JKdVE5NVRGa0x0eU1HWWVmemhtSHJrdXpGLy9FamU0M1NNMHY1UGZjSzlDRUFIS2c4T1JkL1dIVkhkdGlQNnR1Mkk2cGJ0MGJOaVpkNWpMYnZtOUZUTVByczNadmM4SHRPN0g0M0dxWk41ajlTUjNBQUFkS2ptOUZUTTdIazhadlk4L3RJZjZ4bGVHYjFYYklucXBpM1J1K25zYnpkdWpsSzFtdU9raTlCcXhmem84YWdkMmg5eis1K0oyV2YybnZtT2ZxL3BMNW9BQU9naWpjblQwWGhxZDh3K3Rmc0hmN0JVaXNxcTFWRlo5N3FvckZzZnZldGVGNVYxRzZLeWJuMVVWcStMOHVCUWZnT2YwMnBGZmZ4azFGODRGdlBIajhUODhhTlJPM29vNWc4L0g4MjUyYnluNjBvQ0FLRGJ0VnBSUC9WaTFFKzlHUEhNazYvNjA2VktKWHBXclk2ZWxhdWlaK1hJbVYvREs2TThPQmpsL3NFb0R3eEdlV0FneWdPRFVlcnJqMUtsRXFXZVNrUlBUNVRLUFZHcVZDTEs1WWhXSzFyTlJrU2pHYTFtSTFyejg5R2FtNDFtYmU3TWIyZW1vekU1RWMzSmlXaE1UVVRqOUhnMFRyMFk5Wk5qMFRqMVlyUWFqUnllbkhRSkFJREV0ZXIxcUkrTlJuMXNOTzlSeUZBNTd3RUFnT3dKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSWtBQUFnQVFKQUFCSVVIbjdaKzRxNVQwRUFKQ2Q3Wis1cStRR0FBQVNKQUFBSUVFQ0FBQVNKQUFBSUVFQ0FBQVNKQUFBSUVIbGlETWZCOGg3RUFCZytaM2IrVzRBQUNCQkFnQUFFaVFBQUNCQkFnQUFFdlJTQUhnaklBQjB0L04zdlJzQUFFaVFBQUNBQkFrQUFFalF5d0xBK3dBQW9EdTljc2U3QVFDQUJBa0FBRWpRcXdMQXl3QUEwRjB1dE52ZEFBQkFnZ1FBQUNSSUFBQkFnaTRZQU40SEFBRGQ0YlYydWhzQUFFalFhd2FBV3dBQTZHd1gyK1Z1QUFBZ1FRSUFBQkowMFFEd01nQUFkS1pMN1hBM0FBQ1FvRXNHZ0ZzQUFPZ3M3ZXh1TndBQWtLQzJBc0F0QUFCMGhuWjN0aHNBQUVpUUFBQ0FCTFVkQUY0R0FJQmlXOGl1ZGdNQUFBbGFVQUM0QlFDQVlscm9qbDd3RFlBSUFJQml1WnpkN0NVQUFFalFaUVdBV3dBQUtJYkwzY2x1QUFBZ1FaY2RBRzRCQUNCZmk5bkZiZ0FBSUVHTENnQzNBQUNRajhYdTRFWGZBSWdBQU1qV1V1eGVMd0VBUUlLV0pBRGNBZ0JBTnBacTV5N1pEWUFJQUlEbHRaUzdka2xmQWhBQkFMQThsbnJIZWc4QUFDUm95UVBBTFFBQUxLM2wySzNMY2dNZ0FnQmdhU3pYVGwyMmx3QkVBQUFzem5MdVV1OEJBSUFFTFdzQXVBVUFnTXV6M0R0MDJXOEFSQUFBTEV3V3V6T1Rsd0JFQUFDMEo2dWRtZGw3QUVRQUFGeGNscnN5MHpjQmlnQUF1TENzZDJUbW53SVFBUUR3Y25uc3hsdytCaWdDQU9DTXZIWmlidDhESUFJQVNGMmV1ekRYTHdJU0FRQ2tLdThkbVBzM0FlYjlCQUJBMW9xdyszSVBnSWhpUEJFQWtJV2k3THhDQkVCRWNaNFFBRmd1UmRwMWhRbUFpR0k5TVFDd2xJcTI0d29WQUJIRmU0SUFZTEdLdU5zS045RDU5bi9xRTYyOFp3Q0F5MVhFeFg5TzRXNEF6bGZrSnc0QUxxYm9PNnpRQVJCUi9DY1FBRjZwRTNaWDRRYzhuNWNFQUNpeVRsajg1eFQrQnVCOG5mVEVBcENXVHR0UkhSVUFFWjMzQkFQUS9UcHhOM1hjd09memtnQUFlZXJFeFg5T3g5MEFuSytUbjNnQU9sdW43NkNPSHY1OGJnTUF5RUtuTC81enV1SkJuRThJQUxBY3VtWHhuOU5WRCtaOFFnQ0FwZEJ0aS8rY2puNFB3TVYwNjc4d0FMTFR6YnVrYXgvWStkd0dBTEFRM2J6NHorbjZCL2hLWWdDQUMwbGg2Wjh2cVFkN1BpRUFRRVI2aS8rY0pCLzArWVFBUUpwU1hmem5KUDNnWDBrTUFIUzMxSmYrK1R3UkZ5QUVBTHFMeGY5cW5wQTJDQUtBem1MaFg1b25hSUhFQUVBeFdmb0w0OGxhSkVFQWtBOExmM0U4ZWN0QUZBQXNMY3QrNlhsQ015WU9BQzdNa3MvVy93ZTVDQzhDejR1M1BBQUFBQUJKUlU1RXJrSmdnZz09Iiwic2l6ZXMiOiI1MTJ4NTEyIiwidHlwZSI6ImltYWdlL3BuZyJ9XX0=">
+<meta name="theme-color" content="#e07060">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="F15">
+</head>
+<body>
+
+<div id="pwa-banner">
+  <div id="pwa-main" style="display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;">
+    <span>Keep your foundation one tap away.</span>
+    <button onclick="document.getElementById(&#39;pwa-instructions&#39;).style.display=&#39;block&#39;;document.getElementById(&#39;pwa-main&#39;).style.display=&#39;none&#39;;">How to add</button>
+    <button onclick="document.getElementById(&#39;pwa-banner&#39;).style.display=&#39;none&#39;">Dismiss</button>
+  </div>
+  <div id="pwa-instructions" style="display:none;">
+    <div style="margin-bottom:6px;font-weight:600;">Add to your home screen:</div>
+    <div style="margin-bottom:4px;">iPhone: tap the tabs button ☰ at the bottom right of Safari, scroll down, and tap <em>Add to Home Screen.</em></div>
+    <div style="margin-bottom:8px;">Android: tap the three-dot menu ⋮ at the top right of Chrome, then tap <em>Add to Home Screen.</em></div>
+    <button onclick="document.getElementById(&#39;pwa-banner&#39;).style.display=&#39;none&#39;">Dismiss</button>
+  </div>
+</div>
+
+<header>
+  <div class="max-wrap">
+    <div class="brand">Lumeria Wellness™</div>
+    <h1>Foundation 15™</h1>
+    <div class="subtitle">A Cell to Soul™ Reset for the Woman Holding Everything</div>
+  </div>
+</header>
+
+<div style="max-width:680px;margin:0 auto;">
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="switchTab(&#39;checklist&#39;,this)">Daily Checklist</button>
+    <button class="tab-btn" onclick="switchTab(&#39;reference&#39;,this)">Reference Guide</button>
+  </div>
+</div>
+
+<!-- ===== CHECKLIST TAB ===== -->
+<div id="tab-checklist" class="tab-panel active">
+<div class="max-wrap" style="padding-top:20px;">
+
+  <!-- INTRO CARD -->
+  <div style="padding: 24px 0 8px; text-align: left;">
+    <p style="font-family: &#39;Cormorant Garamond&#39;, serif; font-size: 20px; font-style: italic; color: var(--text-mid); line-height: 1.8; margin-bottom: 0;">Your days are full and hurried. The years are flying by. All this asks is 15 moments to reset. To lay solid your ground. Your load will lighten. Your years will lengthen. With Light and love.</p>
+  </div>
+
+  <!-- 1. COMMITMENT CARD -->
+  <div class="card commitment-card">
+    <h3>I am beginning my 30-day Foundation on</h3>
+    <label for="start-date">Start date</label>
+    <input type="date" id="start-date" onchange="saveStartDate(this.value)">
+    <div class="commitment-note">30 days of consistency, not perfection. That is all this asks.</div>
+  </div>
+
+  <!-- 2. PREGAME BANNER -->
+  <div class="pregame-banner">
+    <h3>Pregame Prep — Mindset Shifts</h3>
+    <div class="pregame-cols">
+      <div class="pregame-col">
+        <h4>Presence</h4>
+        <p>Settle in. This moment, these people, this life. Catch yourself in the chaos and come back to now.</p>
+      </div>
+      <div class="pregame-col">
+        <h4>Purpose</h4>
+        <p>See the truth. The hard moments are part of your formation. What is this asking me to learn?</p>
+      </div>
+      <div class="pregame-col">
+        <h4>Power</h4>
+        <p>Own the choice. Not I have to. Try I am choosing my hard now. Microdoses matter.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. ACTIVATION BAR -->
+  <div class="activation-bar">Pick one. Just one. Do it today. Come back tomorrow for another.</div>
+
+  <!-- 4. DATE DISPLAY -->
+  <div class="date-display" id="date-display">Wednesday, June 17, 2026</div>
+
+  <!-- 5. PROGRESS BAR -->
+  <div class="progress-wrap">
+    <div class="progress-label">
+      <span>Today’s Foundation</span>
+      <span id="progress-text">0 of 15 complete</span>
+    </div>
+    <div class="progress-bar-outer">
+      <div class="progress-bar-inner" id="progress-bar" style="width: 0%;"></div>
+    </div>
+  </div>
+
+  <!-- PARTIAL COMPLETION CARD -->
+  <div id="partial-card" style="display:none;background:var(--cream-dark);border:1px solid var(--border-strong);border-left:4px solid var(--green);border-radius:8px;padding:14px 16px;margin-bottom:16px;">
+    <div style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:18px;font-weight:600;color:var(--green-dark);margin-bottom:4px;">Eight down. You are more than halfway.</div>
+    <div style="font-size:13px;font-style:italic;color:var(--text-mid);">Every item you check is a deposit. Keep going.</div>
+  </div>
+
+  <!-- 6. HARD DAY MODE -->
+  <div class="hard-day-row">
+    <span>Having a hard day?</span>
+    <button class="hard-day-btn" id="hard-day-btn" onclick="toggleHardDay()">Hard Day Mode</button>
+  </div>
+
+  <div id="hard-day-card" class="hard-day-card" style="display:none;">
+    <h3>On the hard days, these three are enough.</h3>
+    <p>Everything else is bonus. You showed up. That matters.</p>
+    <div id="hard-day-items"></div>
+  </div>
+
+  <!-- CHECKLIST -->
+  <div id="full-checklist">
+
+    <!-- NOURISH BLOCK -->
+    <div class="block-header nourish">Nourish</div>
+
+    <!-- Item 1 -->
+    <div class="checklist-item">
+      <div class="item-row">
+        <div class="item-circle nourish-dot" id="circle-1" onclick="toggleItem(1)"></div>
+        <div class="item-text">
+          <div class="item-title">Daily sunlight and nature</div>
+          <div class="item-sub">Morning, midday, and evening anchors · no sunglasses · bare feet when you can</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="checklist-item">
+      <div class="item-row">
+        <div class="item-circle nourish-dot" id="circle-2" onclick="toggleItem(2)"></div>
+        <div class="item-text">
+          <div class="item-title">Hydration</div>
+          <div class="item-sub">Half your bodyweight in oz · add electrolytes · make it flavorful</div>
+        </div>
+      </div>
+      <button class="accordion-toggle" onclick="toggleAccordion(&#39;hydration-acc&#39;)">My water target</button>
+      <div class="accordion-body" id="hydration-acc">
+        <div class="calc-label">Water target calculator</div>
+        <div class="calc-row">
+          <input type="number" id="water-weight" placeholder="Weight" min="50" max="400">
+          <select id="water-unit">
+            <option value="lbs">lbs</option>
+            <option value="kg">kg</option>
+          </select>
+          <button class="calc-btn" onclick="calcWater()">Calculate</button>
+        </div>
+        <div class="calc-result" id="water-result"></div>
+        <div class="hydrate-note">Add lemon and mint, electrolyte powder, or watermelon with lime. Make it something you look forward to.</div>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="checklist-item">
+      <div class="item-row">
+        <div class="item-circle nourish-dot" id="circle-3" onclick="toggleItem(3)"></div>
+        <div class="item-text">
+          <div class="item-title">Fuel for function</div>
+          <div class="item-sub">Gut health · the foundation plate · move after meals</div>
+        </div>
+      </div>
+      <div class="fuel-dots">
+        <button class="fuel-dot-btn" id="fdot-1" onclick="tapFuelDot(1)">🌿 Gut health</button>
+        <button class="fuel-dot-btn" id="fdot-2" onclick="tapFuelDot(2)">🍽 Foundation plate</button>
+        <button class="fuel-dot-btn" id="fdot-4" onclick="tapFuelDot(4)">🚶 Move after meals</button>
+      </div>
+      <!-- Foundation Plate Popover -->
+      <div class="inline-popover" id="popover-plate">
+        <button class="popover-close" onclick="closePopover(&#39;popover-plate&#39;)">Close</button>
+        <div style="text-align:center;">
+          <canvas id="plate-canvas-small" width="160" height="160"></canvas>
+          <div class="plate-legend">
+            <div><span class="legend-dot" style="background:#6B9E2A;"></span><strong>Half:</strong> non-starchy vegetables</div>
+            <div><span class="legend-dot" style="background:#e8907a;"></span><strong>Quarter:</strong> protein</div>
+            <div><span class="legend-dot" style="background:#FFD700;"></span><strong>Quarter:</strong> fruit, whole grains, legumes, or starchy vegetable</div>
+          </div>
+          <div class="plate-caption">No tracking. No weighing. Just proportion and color.</div>
+        </div>
+      </div>
+      <!-- Hydrate Popover -->
+      <div class="inline-popover" id="popover-hydrate">
+        <button class="popover-close" onclick="closePopover(&#39;popover-hydrate&#39;)">Close</button>
+        <div class="calc-label">Water target calculator</div>
+        <div class="calc-row">
+          <input type="number" id="water-weight" placeholder="Weight" min="50" max="400">
+          <select id="water-unit">
+            <option value="lbs">lbs</option>
+            <option value="kg">kg</option>
+          </select>
+          <button class="calc-btn" onclick="calcWater()">Calculate</button>
+        </div>
+        <div class="calc-result" id="water-result"></div>
+        <div class="hydrate-note">Add lemon and mint, electrolyte powder, or watermelon with lime. Make it something you look forward to.</div>
+      </div>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="checklist-item">
+      <div class="item-row">
+        <div class="item-circle nourish-dot" id="circle-4" onclick="toggleItem(4)"></div>
+        <div class="item-text">
+          <div class="item-title">Hit your protein target</div>
+          <div class="item-sub">1.2 to 1.6g per kg ideal body weight · front-load your day</div>
+        </div>
+      </div>
+      <button class="accordion-toggle" onclick="toggleAccordion(&#39;protein-acc&#39;)">My protein target</button>
+      <div class="accordion-body" id="protein-acc">
+        <div class="calc-label">Ideal body weight</div>
+        <div class="calc-row">
+          <input type="number" id="protein-weight" placeholder="Weight" min="50" max="400">
+          <select id="protein-unit">
+            <option value="lbs">lbs</option>
+            <option value="kg">kg</option>
+          </select>
+          <button class="calc-btn" onclick="calcProtein()">Calculate</button>
+        </div>
+        <div class="calc-result" id="protein-result"></div>
+      </div>
+    </div>
+
+    <!-- Item 5 -->
+    <div class="checklist-item">
+      <div class="item-row">
+        <div class="item-circle nourish-dot" id="circle-5" onclick="toggleItem(5)"></div>
+        <div class="item-text">
+          <div class="item-title">Pause on purpose</div>
+          <div class="item-sub">Stop. Breathe. Soak it in. Rinse and repeat as often as needed.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 6 -->
+    <div class="checklist-item">
+      <div class="item-row">
+        <div class="item-circle nourish-dot" id="circle-6" onclick="toggleItem(6)"></div>
+        <div class="item-text">
+          <div class="item-title">Zone 2 cardio</div>
+          <div class="item-sub">Conversational pace · walk, cycle, swim · move after meals counts · any amount today counts</div>
+        </div>
+      </div>
+      <div class="zone2-tracker">
+        <div style="font-size:12px;font-style:italic;color:var(--text-light);margin-bottom:8px;">Weekly goal: 150 minutes. Track your cumulative minutes below. Check the item above for any movement today.</div>
+        <div class="minutes-controls">
+          <button class="min-btn" onclick="adjustMinutes(-10)">−</button>
+          <div class="minutes-display"><span id="minutes-count">0</span> <span class="minutes-note">min this week</span></div>
+          <button class="min-btn" onclick="adjustMinutes(10)">+</button>
+        </div>
+        <div class="milestone-msg" id="zone2-milestone"></div>
+        <div class="tracker-italic">Every minute counts. A 10-minute walk after a meal is medicine.</div>
+        <button class="reset-btn" onclick="resetZone2()">Reset minutes</button>
+      </div>
+    </div>
+
+    <!-- Item 7 -->
+    <div class="checklist-item">
+      <div class="item-row">
+        <div class="item-circle nourish-dot" id="circle-7" onclick="toggleItem(7)"></div>
+        <div class="item-text">
+          <div class="item-title">Resistance training</div>
+          <div class="item-sub">2 to 3 sessions this week · bands, weights, or bodyweight · yours, just for you</div>
+        </div>
+      </div>
+      <div style="padding-left:0;margin-top:10px;">
+        <div class="session-circles">
+          <div class="session-circle" id="sess-1" onclick="tapSession(1)">1</div>
+          <div class="session-circle" id="sess-2" onclick="tapSession(2)">2</div>
+          <div class="session-circle" id="sess-3" onclick="tapSession(3)">3</div>
+        </div>
+        <div class="milestone-msg" id="resist-milestone"></div>
+        <div class="tracker-italic">Any effort counts. Ten minutes beats zero every time.</div>
+        <button class="reset-btn" onclick="resetResistance()">Reset sessions</button>
+      </div>
+    </div>
+
+    <!-- Item 8 -->
+    <div class="checklist-item" style="border-radius:0 0 8px 8px;">
+      <div class="item-row">
+        <div class="item-circle nourish-dot" id="circle-8" onclick="toggleItem(8)"></div>
+        <div class="item-text">
+          <div class="item-title">Your wind-down</div>
+          <div class="item-sub">Lights dim · cool the room · wind-down routine · last call on the worry journal</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DETOX BLOCK -->
+    <div class="block-header detox">Detox</div>
+
+    <!-- Item 9 -->
+    <div class="checklist-item">
+      <div class="item-row">
+        <div class="item-circle detox-dot" id="circle-9" onclick="toggleItem(9)"></div>
+        <div class="item-text">
+          <div class="item-title">Reduce or eliminate alcohol</div>
+          <div class="item-sub">Own the choice · not I can’t · I don’t want to right now</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 10 -->
+    <div class="checklist-item">
+      <div class="item-row">
+        <div class="item-circle detox-dot" id="circle-10" onclick="toggleItem(10)"></div>
+        <div class="item-text">
+          <div class="item-title">Digital boundaries</div>
+          <div class="item-sub">Daytime awareness · screen-free wind-down · is this adding to my life?</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 11 -->
+    <div class="checklist-item" style="border-radius:0 0 8px 8px;">
+      <div class="item-row">
+        <div class="item-circle detox-dot" id="circle-11" onclick="toggleItem(11)"></div>
+        <div class="item-text">
+          <div class="item-title">Scheduled worry — all-day practice</div>
+          <div class="item-sub">What is taking up space in my mind right now? Write it · give it a time · return to now · notebook on the counter</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONNECT BLOCK -->
+    <div class="block-header connect">Connect</div>
+
+    <!-- Item 12 -->
+    <div class="checklist-item">
+      <div class="item-row">
+        <div class="item-circle connect-dot" id="circle-12" onclick="toggleItem(12)"></div>
+        <div class="item-text">
+          <div class="item-title">Fully present with my people</div>
+          <div class="item-sub">Did I find a moment today to be fully engaged with someone I love? · phone face-down · real conversations</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 13 -->
+    <div class="checklist-item">
+      <div class="item-row">
+        <div class="item-circle connect-dot" id="circle-13" onclick="toggleItem(13)"></div>
+        <div class="item-text">
+          <div class="item-title">Show up and give</div>
+          <div class="item-sub">The giving is the meaning · how did I show up for others today?</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 14 -->
+    <div class="checklist-item">
+      <div class="item-row">
+        <div class="item-circle connect-dot" id="circle-14" onclick="toggleItem(14)"></div>
+        <div class="item-text">
+          <div class="item-title">Grateful moments: right now I am grateful for…</div>
+          <div class="item-sub">Settle in · See the truth · Own the choice</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 15 -->
+    <div class="checklist-item" style="border-radius:0 0 8px 8px;">
+      <div class="item-row">
+        <div class="item-circle connect-dot" id="circle-15" onclick="toggleItem(15)"></div>
+        <div class="item-text">
+          <div class="item-title">Spiritual anchor</div>
+          <div class="item-sub">Prayer, stillness, or gratitude · stack onto morning sunlight · anytime</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end full-checklist -->
+
+  <!-- 8. COMPLETION CARD -->
+  <div id="completion-card" class="completion-card" style="display: none; margin-top: 16px;">
+    <h2>You showed up for yourself today.</h2>
+    <div class="sub">Foundation laid — cell to soul</div>
+    <div class="outcome-tags">
+      <span class="outcome-tag tag-green">Blood sugar stability</span>
+      <span class="outcome-tag tag-coral">Microbiome support</span>
+      <span class="outcome-tag tag-yellow">Hormonal balance</span>
+      <span class="outcome-tag tag-green">Immune function</span>
+      <span class="outcome-tag tag-coral">Pain relief</span>
+      <span class="outcome-tag tag-yellow">Stronger muscles</span>
+      <span class="outcome-tag tag-green">Stronger bones</span>
+      <span class="outcome-tag tag-coral">Heart health</span>
+      <span class="outcome-tag tag-yellow">Stress softens</span>
+      <span class="outcome-tag tag-green">Mood elevates</span>
+      <span class="outcome-tag tag-coral">Brain fog lifts</span>
+    </div>
+  </div>
+
+  <!-- 9. RESET BUTTON -->
+  <button class="main-reset-btn" onclick="resetForTomorrow()">Reset for tomorrow</button>
+
+  <!-- 10. NEW WEEK CARD -->
+  <div id="new-week-card" class="new-week-card" style="display:none;">
+    <h3>Begin a new week</h3>
+    <p id="new-week-msg"></p>
+    <button class="new-week-btn" onclick="beginNewWeek()">Begin a new week</button>
+  </div>
+
+  <!-- 11. WEEKLY REFLECTION -->
+  <div class="section-accordion">
+    <button class="section-accordion-btn" onclick="toggleSectionAccordion(&#39;reflection-body&#39;)">
+      Weekly Reflection <span class="arrow">▼</span>
+    </button>
+    <div class="section-accordion-body" id="reflection-body">
+      <div class="reflection-header">Weekly Reflection</div>
+      <div class="reflection-note">Sunday morning with coffee. Three questions. No journaling required.</div>
+      <div class="reflection-q">What worked this week?</div>
+      <textarea id="reflect-1" placeholder=""></textarea>
+      <div class="reflection-q">What got in the way?</div>
+      <textarea id="reflect-2" placeholder=""></textarea>
+      <div class="reflection-q">What did I tell myself when things got hard?</div>
+      <textarea id="reflect-3" placeholder=""></textarea>
+      <button class="save-reflection-btn" onclick="saveReflection()">Save this week</button>
+      <span class="saved-confirm" id="saved-confirm" style="display:none;">Saved</span>
+      <div class="device-note">Your reflections are saved on this device only.</div>
+    </div>
+  </div>
+
+  <!-- 12. MY HISTORY -->
+  <div class="section-accordion">
+    <button class="section-accordion-btn" onclick="toggleSectionAccordion(&#39;history-body&#39;)">
+      My History <span class="arrow">▼</span>
+    </button>
+    <div class="section-accordion-body" id="history-body">
+      <div id="streak-badge" class="streak-badge"></div>
+      <div id="history-records"></div>
+    </div>
+  </div>
+
+  <!-- 13. CTA STRIP -->
+  <div class="cta-strip">
+    <h3>The foundation is forever.</h3>
+  </div>
+
+  <!-- DISCLAIMER -->
+  <div class="disclaimer">
+    This checklist is for educational purposes only and does not constitute medical advice.<br>
+    Please consult your healthcare provider before making changes to your health routine.<br><br>
+    Written by Jessica McGraw, PA-C, dipACLM. AI used for editing and formatting only.<br>
+    © 2026 Jessica McGraw. All rights reserved. Foundation 15™ is a product of Lumeria Wellness™.<br>
+    Cell to Soul™ is a trademark of Jessica McGraw. Unauthorized reproduction or distribution of this material is prohibited.
+  </div>
+
+</div><!-- end max-wrap -->
+</div><!-- end checklist tab -->
+
+<!-- ===== REFERENCE GUIDE TAB ===== -->
+<div id="tab-reference" class="tab-panel">
+<div class="max-wrap" style="padding-top:20px;">
+
+  <!-- SECTION 1: Intro -->
+  <div class="ref-intro">
+    <h2>A word before you start</h2>
+    <p>As women in midlife, we are often exhausted, stressed, and struggling in a very real way with the changes our bodies are going through. We would like clarity on exactly the one or few things causing the problem and would love a magic pill to fix it all. The reality is both more complex and more beautiful at the same time.</p>
+    <p>We are organic beings designed to be in tune with nature — whole foods, sunlight, movement, sleeping and living in circadian rhythm. We are also gifted with a highly functioning cognitive capacity that shapes how we experience our entire existence. Our worldview, thoughts, and perspectives can make or break a moment and, for better or worse, a lifetime.</p>
+    <p>Health is not an accomplishment. It is a reflection of how we live. How we live is a reflection of our daily decisions to align our priorities with our actions. It is a continuum of thought and action that brings us back to homeostasis.</p>
+    <p>At first glance this list might look like a full-time job. It is not. Many of these are things you are already doing in some form. What we are doing here is naming them, refining them, and making them intentional. A sunrise walk you already take becomes your circadian anchor. The deep breath you grab between tasks becomes your mindfulness practice. The vegetables on your dinner plate become your estrobolome support. These are not additions to your life. They are upgrades to what is already there.</p>
+    <p>Sometimes the things we do that keep us from better health — scrolling instead of going to bed early, having a glass of wine instead of a cup of tea, doing something productive instead of exercising — are a reflection of our desire to fulfill needs that become pressing when they haven’t been met. Scrolling requires nearly zero effort and gives us a dopamine hit, a way to check out, a false sense of connection. Wine is an instant sense of stress release, literally popping the cork after a long day of nonstop going and doing and being everything for everyone. The issue is that none of these have lasting benefits. We wake up each day feeling no better, in fact a little worse than the day before. Microdoses of deficit add up over the years.</p>
+    <p>We are not broken when we feel exhausted, stressed, heavy, pained, and struggle to experience joy. Our job is not to criticize, condemn, or dissect ourselves. It is to nourish ourselves with the actual substance required to be in homeostasis. One day at a time, one habit at a time, practiced consistently over time — the impact in the years to come is profound. Start low and go slow. Titrate to effect.</p>
+    <p>The Foundation 15™ boils down to three categories:</p>
+    <div class="pillar-cards">
+      <div class="pillar-card card-green">
+        <h4>Nourish</h4>
+        <p>Feed what thrives</p>
+      </div>
+      <div class="pillar-card card-coral">
+        <h4>Detox</h4>
+        <p>Cut what costs you</p>
+      </div>
+      <div class="pillar-card card-yellow">
+        <h4>Connect</h4>
+        <p>Return to what matters</p>
+      </div>
+    </div>
+    <div class="closing-italic">Adding any remedy, treatment, or hack on top of an unstable foundation will ultimately fail. This is your foundation. Before adding anything else — especially if it is costly or time-consuming — lay this first, consistently, and without retreat. This is smart medicine.</div>
+    <div class="authorship-line">Written by Jessica McGraw, PA-C, dipACLM. AI used for editing and formatting only.</div>
+  </div>
+
+  <!-- SECTION 2: What Changes -->
+  <div class="what-changes">
+    <h2>What changes</h2>
+    <p>When practiced with consistency, not perfection, these 15 moments throughout your day become your steady ground. Each moment is an opportunity to nourish, to reset, to choose differently than the moment before. We are preparing our bodies and minds to carry the weight without being crushed by it.</p>
+    <p>This is not a magic cure all. Many of us still have very real health issues to address, and that doesn’t change. What changes is the foundation for healing. When the foundation is stable, the body and mind have a way back to homeostasis and the next layer of healing — medication, supplements, therapies — has the support to be that much more effective.</p>
+    <p>We are beings that are capable of healing by design. With the right fuel for our cells and our souls.</p>
+    <div class="outcome-tags" style="justify-content:flex-start;">
+      <span class="outcome-tag tag-green">Blood sugar stability</span>
+      <span class="outcome-tag tag-coral">Microbiome support</span>
+      <span class="outcome-tag tag-yellow">Hormonal balance</span>
+      <span class="outcome-tag tag-green">Immune function</span>
+      <span class="outcome-tag tag-coral">Pain relief</span>
+      <span class="outcome-tag tag-yellow">Stronger muscles</span>
+      <span class="outcome-tag tag-green">Stronger bones</span>
+      <span class="outcome-tag tag-coral">Heart health</span>
+      <span class="outcome-tag tag-yellow">Stress softens</span>
+      <span class="outcome-tag tag-green">Mood elevates</span>
+      <span class="outcome-tag tag-coral">Brain fog lifts</span>
+      <span class="outcome-tag tag-yellow">More energy</span>
+      <span class="outcome-tag tag-green">More peace</span>
+      <span class="outcome-tag tag-coral">Connections deepen</span>
+    </div>
+  </div>
+
+  <!-- SECTION 3: About -->
+  <div class="about-card">
+    <h2>About Jessica McGraw</h2>
+    <p>For most of my career, I have practiced medicine in the moments between just in time and it’s too late.</p>
+    <p>I’m a PA-C. Diplomate ACLM. Fourteen years in emergency medicine, urgent care, and oncology. I’m a Christian, a wife, a mother of two sons. I don’t have it all together. I’m not in perfect shape or perfect health. I suffer my share daily. I surrender, but I do not concede.</p>
+    <p>I felt a yearning to serve differently. To show up before it’s too late. To show people how a sunset hike might be the best medicine to keep you from a hallway gurney.</p>
+    <p>I’m also a mother of young children entering my early wisdom years, trying to figure out how to be the best me for the people that need me.</p>
+    <p>I am not here to influence you. I am not here to impress you. I’m here to serve you. And to invite you to join me on the journey to becoming the best version of ourselves. With the knowledge that “becoming” has no end, but rather is the ever changing and beautiful journey towards an unavoidable end. One I want to come to knowing I gave this life my all.</p>
+    <p><strong>If you’re reading this, you’re invited exactly as you are.</strong></p>
+  </div>
+
+  <!-- SECTION 4: Pregame Prep -->
+  <div class="pregame-ref">
+    <h2>Pregame Prep</h2>
+    <div class="sub-heading">Mindset shifts — an invitation to presence, purpose, and power</div>
+    <p>The art of becoming well requires the consistent commitment to microdoses of health promoting habits, and the omission of disease promoting ones. The ability to “make it stick” and to feel a sense of peace in all the growing and doing and being relies on frequently accessing and returning to a wisdom mindset. The goal is not another plan to follow. It is change that becomes second nature, woven into who you are rather than added onto what you do. That requires understanding the why behind your choices — the ones that serve you, and especially the ones that don’t. That introspection is different for everyone and it is everything.</p>
+    <h3>Presence: “Settle in”</h3>
+    <p>This present moment — with these littles, this family, these friends, in this home, under this sky, on this day of this year — IS your life. If, like me, you’ve ever suffered from “I’ll be happy when…” syndrome then you know that being present can be very difficult for a woman carrying what feels like the weight of the world. And at the same time, full immersion in the present is so powerful. It’s not always possible. Women can multitask like the best of them for a reason, because that weight is heavy, and balls drop fast. But when you can, breathe. Catch yourself in the chaos and bring yourself back to now. Savor it.</p>
+    <h3>Purpose: “See the truth”</h3>
+    <p>The reality is that not every moment feels good. In fact, a lot of moments throughout each and every day are hard. The tantrums, the request you’ve repeated a thousand times (why can’t clothes just magically float to the hamper?), holding a sick baby (no matter how old they are), helping your kid through a hard moment, going to work when you’d rather be home, waking up when you’re not fully rested, getting in a workout when your joints aren’t feeling it, and all of it. All of the hard. During times like this I find myself looking up. How is this moment part of my formation as a human? What is the lesson, the opportunity for wisdom, the virtue that needs strengthening? Romans 8:28 tells us that God uses all things for good. “Good” being our spiritual expansion, not necessarily our worldly pleasure. What is the spiritual truth in this moment?</p>
+    <h3>Power: “Own the choice”</h3>
+    <p>How we frame our habits, decisions, and lifestyle matters. The reality is that all of it is a choice. We have free will. Instead of “I can’t drink wine” try “I don’t want alcohol right now.” Instead of “I have to workout” try “I’m choosing my hard now.” Exercise when you don’t feel like it is hard, but being weak and in pain and lacking functional and cognitive ability later is arguably going to be much harder. Remember: microdoses matter.</p>
+    <div class="scripture-block">“And we know that in all things God works for the good of those who love him.” — Romans 8:28</div>
+    <div class="italic-close">For the genuinely hard moments: What is this moment asking me to learn?</div>
+  </div>
+
+  <!-- SECTION 5: Bridging -->
+  <div class="bridging-card">
+    <p>Your best today is enough. There is no ceiling on your potential. You don’t get to the top with bounding strides. You get there one step, one moment, one choice at a time. You’re not behind. You’re becoming. Let’s go.</p>
+  </div>
+
+  <!-- SECTION 6: Reference Items -->
+
+  <!-- NOURISH BLOCK -->
+  <div class="ref-block-header nourish">
+    <h3>Nourish</h3>
+    <div class="block-sub">Feed what thrives</div>
+  </div>
+
+  <!-- Ref Item 1 -->
+  <div class="ref-item">
+    <div class="ref-item-num">01</div>
+    <div class="ref-item-title">Daily sunlight and nature</div>
+    <div class="science-pill">Circadian rhythm · Cortisol regulation · Vitamin D · Serotonin · Melatonin</div>
+    <div class="ref-body">
+      <p>Morning light entering your eyes within the first hour of waking is the most powerful signal your brain receives all day. It tells your master internal clock what time it is, triggering a precise cortisol peak that sets your energy, mood, alertness, and sleep timing for the next 16 hours. Go outside without sunglasses. Your eyes need direct, unfiltered light to signal the brain.</p>
+      <p>This is the first of three daily sunlight anchors. Midday light peaks serotonin synthesis and vitamin D production. Evening light, a walk at dusk or sitting near a window at sunset, tells your brain the day is ending and prepares melatonin to rise on schedule.</p>
+      <p>Most women in perimenopause are vitamin D deficient, which directly affects mood, immunity, bone density, and pain perception. Have your level tested if you haven’t recently.</p>
+    </div>
+    <div class="personal-note">There are micromoments throughout our day that we very easily bypass without even realizing it. Consider this an invitation to let nature be your reminder to breathe, to acknowledge something you’re grateful for, to remember that you are not carrying the entire world alone.</div>
+  </div>
+
+  <!-- Ref Item 2 -->
+  <div class="ref-item">
+    <div class="ref-item-num">02</div>
+    <div class="ref-item-title">Hydration</div>
+    <div class="science-pill">Cellular hydration · Cortisol regulation · Gut motility · Electrolyte balance · Pain perception</div>
+    <div class="ref-body">
+      <p>After seven to eight hours without fluids, your body wakes mildly dehydrated. Even mild dehydration measurably impairs cognition, amplifies fatigue, and mimics hunger. Drinking water before your first cup of coffee rehydrates your cells, blunts the morning cortisol spike, and gives your brain what it needs to actually wake up.</p>
+      <p>Dehydration mimics hunger. Before reaching for a snack, drink 8 oz and wait 10 minutes. Dehydration also amplifies pain. Spinal discs, cartilage, and fascia are largely water. Chronic under-hydration increases joint friction and pain sensitivity.</p>
+      <p>On days you exercise or in summer heat, add a pinch of Himalayan salt or a clean electrolyte powder with no added sugar. Your daily target: half your body weight in ounces.</p>
+    </div>
+    <div style="margin:14px 0;">
+      <div class="calc-label">Water target calculator</div>
+      <div class="calc-row">
+        <input type="number" id="water-weight-ref" placeholder="Weight" min="50" max="400">
+        <select id="water-unit-ref">
+          <option value="lbs">lbs</option>
+          <option value="kg">kg</option>
+        </select>
+        <button class="calc-btn" onclick="calcWaterRef()">Calculate</button>
+      </div>
+      <div class="calc-result" id="water-result-ref"></div>
+    </div>
+    <div class="personal-note">Start slow. Savor the first sip. Bonus: if plain water isn’t your thing, add lemon and mint, a sprinkle of electrolyte powder, or watermelon chunks with a squeeze of lime.</div>
+  </div>
+
+  <!-- Ref Item 3 -->
+  <div class="ref-item">
+    <div class="ref-item-num">03</div>
+    <div class="ref-item-title">Fuel for function</div>
+    <div class="science-pill">Insulin sensitivity · Inflammation · Estrobolome · Gut microbiome · Blood sugar · Mediterranean pattern</div>
+    <div class="ref-body">
+      <p>Estrogen supports insulin receptor sensitivity, glucose uptake in skeletal muscle, and suppression of glucose production by the liver. As estrogen declines in perimenopause, insulin resistance worsens. The same dietary choices that were neutral at 35 carry real metabolic consequences at 45.</p>
+      <p>The Mediterranean dietary pattern has the strongest evidence base for reducing blood pressure, triglycerides, LDL cholesterol, and inflammatory markers in this population.</p>
+    </div>
+    <div class="ref-subsection">
+      <h4>Gut health</h4>
+      <p class="ref-body">The estrobolome, the specific gut bacteria responsible for estrogen metabolism, is fed by dietary fiber and disrupted by processed food and artificial additives. Aim for 25 to 35g of fiber daily from diverse plant sources, plus one to two servings of fermented food. Kimchi, sauerkraut, plain kefir, or full-fat Greek yogurt all count.</p>
+    </div>
+    <div class="ref-subsection">
+      <h4>The Foundation Plate</h4>
+      <p class="ref-body">Half your plate non-starchy vegetables (color equals phytonutrients), one quarter protein, one quarter fruit, whole grains, legumes, or starchy vegetable. No tracking. No weighing. Just proportion and color.</p>
+      <div style="text-align:center;margin:14px 0;">
+        <canvas id="plate-canvas-ref" width="200" height="200"></canvas>
+        <div class="plate-legend" style="text-align:left;display:inline-block;">
+          <div><span class="legend-dot" style="background:#6B9E2A;"></span><strong>Half:</strong> non-starchy vegetables</div>
+          <div><span class="legend-dot" style="background:#e8907a;"></span><strong>Quarter:</strong> protein</div>
+          <div><span class="legend-dot" style="background:#FFD700;"></span><strong>Quarter:</strong> fruit, whole grains, legumes, or starchy vegetable</div>
+        </div>
+        <div class="plate-caption">No tracking. No weighing. Just proportion and color.</div>
+      </div>
+    </div>
+    <div class="ref-subsection">
+      <h4>Move after meals</h4>
+      <p class="ref-body">A 10-minute walk after each meal acts as an independent glucose transporter, pulling blood sugar into muscle cells without requiring insulin. If a walk is not possible, 20 air squats produce a comparable result. Any movement counts. A living room dance party clears glucose and cortisol at the same time. Science approves.</p>
+    </div>
+    <div class="mediter-box">
+      <h4>Three quick Mediterranean dinners</h4>
+      <ul>
+        <li>Sheet pan salmon with roasted vegetables and olive oil</li>
+        <li>White bean and spinach soup with crusty whole grain bread</li>
+        <li>Grilled chicken over a simple Greek salad with lemon tahini dressing</li>
+      </ul>
+    </div>
+    <div class="snack-box">
+      <h4>Snack rules</h4>
+      <ul>
+        <li>Ingredients you can recognize</li>
+        <li>No added sugars</li>
+        <li>No hydrogenated oils</li>
+        <li>Organic when possible</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Ref Item 4 -->
+  <div class="ref-item">
+    <div class="ref-item-num">04</div>
+    <div class="ref-item-title">Hit your protein target</div>
+    <div class="science-pill">Muscle preservation · Hormonal function · Bone density · Immune response · Metabolic health · Anabolic sensitivity</div>
+    <div class="ref-body">
+      <p>Protein is not just a fitness variable. It is a foundational requirement for how your body functions at the cellular level. Hormones, enzymes, immune proteins, neurotransmitters, skin, bone, and muscle are all protein-dependent structures. In midlife, your need for dietary protein increases precisely when most women are not paying attention to it. Declining estrogen reduces anabolic sensitivity, meaning your muscle tissue becomes less responsive to the protein you do eat. The result is accelerated muscle loss, slower metabolism, reduced bone density, thinning skin and hair, blunted immune response, and mood and cognitive changes that are easy to misattribute to hormones alone. Many of the symptoms women accept as inevitable in perimenopause have a significant nutritional component that goes unaddressed.</p>
+      <p>The target most current research supports is between 1.2 and 1.6 grams of protein per kilogram of body weight daily, significantly higher than the general recommendation. More important than the daily total is distribution. Your body can only use so much protein at one time for muscle repair and synthesis, so spreading intake across three meals, each with a meaningful protein source, matters as much as hitting your number. Prioritize complete proteins, foods that contain all essential amino acids your body cannot make on its own. Eggs, Greek yogurt, cottage cheese, salmon and fatty fish, lean poultry, and beef are your highest quality options. Fatty fish earns a top spot not just for its amino acid profile but for the anti-inflammatory omega-3s that work alongside protein to protect muscle tissue. If you limit animal products, whole soy foods like edamame, tempeh, and tofu are the only plant proteins with a comparable amino acid profile.</p>
+      <p>Think of protein less as a macronutrient to count and more as raw material your body is constantly drawing from. When supply is chronically low, the body pulls from its own tissue, muscle, bone, immune cells, to meet demand. In midlife, that is a deficit you cannot afford to run.</p>
+    </div>
+    <div class="breakfast-box">
+      <h4>5-minute breakfast options</h4>
+      <ul>
+        <li>Greek yogurt parfait: 1 cup plain full-fat Greek yogurt + wild blueberries + 2 tbsp hemp seeds — approximately 25g protein, anthocyanins, omega-3s</li>
+        <li>Veggie egg scramble: 3 eggs + sautéed spinach and peppers + avocado + 2 tbsp pumpkin seeds + side of fruit — approximately 22g protein. Fully dairy-free and gluten-free.</li>
+        <li>Protein smoothie: 1 scoop whey or pea protein + frozen wild blueberries + spinach + almond butter + almond milk — approximately 25g protein, three minutes flat</li>
+        <li>2-egg scramble + smoked salmon + spinach — approximately 27g protein, astaxanthin, folate</li>
+      </ul>
+    </div>
+    <div style="background:var(--cream-dark);border-radius:8px;padding:14px;margin:14px 0;">
+      <div class="calc-label">Ideal body weight — protein target</div>
+      <div class="calc-row">
+        <input type="number" id="protein-weight-ref" placeholder="Weight" min="50" max="400">
+        <select id="protein-unit-ref">
+          <option value="lbs">lbs</option>
+          <option value="kg">kg</option>
+        </select>
+        <button class="calc-btn" onclick="calcProteinRef()">Calculate</button>
+      </div>
+      <div class="calc-result" id="protein-result-ref"></div>
+      <div style="font-size:12px;color:var(--text-mid);font-style:italic;margin-top:6px;">Based on 1.2 to 1.6g per kg of ideal body weight. Prioritize breakfast and dinner.</div>
+    </div>
+    <div class="personal-note">Keep it simple, easy, and yummy. Make sure it's something you like and look forward to eating. Track your favorite meals once during a weekly meal prep session, then just enjoy your food.</div>
+  </div>
+
+    <!-- Ref Item 5 -->
+  <div class="ref-item">
+    <div class="ref-item-num">05</div>
+    <div class="ref-item-title">Pause on purpose</div>
+    <div class="science-pill">Parasympathetic activation · HRV · Cortisol · Attention restoration · Grounding</div>
+    <div class="ref-body">
+      <p>Start here. This is your most accessible tool, free to use anytime, anywhere, as many times as the day asks for it. No goal, no focus, no phone. Just stop and breathe.</p>
+      <p>Close your eyes and picture your bare feet in the grass. If possible, step outside and actually do this. Feel the wind on your face, the sun warm your skin. Research on grounding and nature exposure supports measurable reductions in cortisol, improved heart rate variability, and parasympathetic activation. This is medicine. Access it freely.</p>
+      <p>Body awareness practices, yoga, breathwork, tai chi, and somatic movement extend this practice for when you have more time. Even 10 minutes. Even imperfectly.</p>
+    </div>
+    <div class="personal-note">Stop. Breathe. Soak it in. Rinse and repeat as often as needed.</div>
+  </div>
+
+  <!-- Ref Item 6 -->
+  <div class="ref-item">
+    <div class="ref-item-num">06</div>
+    <div class="ref-item-title">Zone 2 cardio — 30 minutes daily</div>
+    <div class="science-pill">Cardiovascular function · Insulin sensitivity · Mood · Sleep · Zone 2 physiology</div>
+    <div class="ref-body">
+      <p>Zone 2 cardio means moving at a conversational pace, brisk walking, cycling, swimming, or dancing, at an intensity where you could speak in full sentences but would not want to sing. This zone specifically targets mitochondrial efficiency, fat oxidation, and cardiovascular resilience.</p>
+      <p>The weekly target of approximately 150 minutes is well-supported in lifestyle medicine research for reducing cardiovascular risk, improving insulin sensitivity, stabilizing mood, and improving sleep quality in perimenopausal women.</p>
+      <p>The after-meal walk is one of the most natural ways to accumulate this time without adding a separate workout to your day. Ten minutes after each meal adds up to 30 minutes before you have done anything extra.</p>
+    </div>
+    <div class="personal-note">Brisk walking counts. Dancing counts. A bike ride counts. The bar for Zone 2 is lower than most women think, and the return is higher than almost any other single habit on this list.</div>
+  </div>
+
+  <!-- Ref Item 7 -->
+  <div class="ref-item">
+    <div class="ref-item-num">07</div>
+    <div class="ref-item-title">Resistance training</div>
+    <div class="science-pill">Muscle preservation · Bone density · Metabolism · Insulin sensitivity · Mental health</div>
+    <div class="ref-body">
+      <p>You are already moving constantly. This is not about moving more. This is about moving for yourself, on purpose.</p>
+      <p>After 40, women lose muscle mass at an accelerating rate without resistance training. Muscle is your metabolic engine. It burns more energy at rest, absorbs blood sugar like a sponge, protects your joints, and preserves bone density as estrogen declines. Without it, metabolism slows, weight becomes harder to manage, pain increases, and fatigue deepens.</p>
+      <p>Research supports 2 to 3 sessions per week of resistance training, compound movements at moderate to high intensity, 6 to 8 reps per muscle group, with adequate rest between sessions. Ten to 15 focused minutes with bands, a TRX strap, or dumbbells meets the evidence threshold. You do not need a gym.</p>
+      <p>There is also a mental shift that happens when you move for yourself rather than for everyone else. It releases BDNF, reduces cortisol, and gives you something in the day that belongs only to you.</p>
+    </div>
+    <div class="personal-note">Setting up a small home gym, even just a corner of the living room with your equipment ready to go, significantly increases your chance of getting a workout in. If you are new to resistance training or want a structured starting point, there are excellent resources online and at home. Doing something is always better than nothing. Microdoses matter.</div>
+  </div>
+
+  <!-- Ref Item 8 -->
+  <div class="ref-item" style="border-radius:0 0 8px 8px;">
+    <div class="ref-item-num">08</div>
+    <div class="ref-item-title">Your wind-down</div>
+    <div class="science-pill">Melatonin synthesis · Sleep architecture · Cortisol · HPA axis · Circadian rhythm · Progesterone</div>
+    <div class="ref-body">
+      <p>Sleep is not passive. It is the primary overnight repair window for every system in your body: immune, metabolic, cardiovascular, neurological, and hormonal. The brain cycles through distinct stages, each with its own purpose. Deep slow-wave sleep (NREM) drives physical repair, immune function, and memory consolidation. REM processes emotional experience and supports mood regulation. A full night allows four to six complete 90-minute cycles, which is why 7 to 9 hours is the target. Both stages are disrupted by alcohol, certain medications, sedatives, and the progesterone loss that characterizes perimenopause.</p>
+      <p>Timing matters as much as duration. Going to bed too late steals NREM. You miss your deepest, most physically restorative sleep and wake feeling heavy regardless of total hours. Waking too early steals REM. You feel foggy, reactive, and mentally flat. For women in perimenopause, hormonal shifts already compromise both, meaning many are getting enough hours but not enough restoration.</p>
+      <p>How well and when we sleep is not always in our control. Parents, caregivers, illness, work schedules, stress, and hormonal changes all affect timing and quality. What follows are the foundational steps to foster better sleep, with resources for the harder circumstances.</p>
+    </div>
+    <div class="ref-subsection">
+      <h4>The Basics</h4>
+      <div class="ref-body">
+        <p><strong>Morning:</strong> Get outside or use a 10,000 lux light box within 30 minutes of waking. Same wake time daily, no exceptions. This anchors cortisol and melatonin timing for the entire day.</p>
+        <p><strong>Evening:</strong> Switch to dim, warm, or red-spectrum light after 8 PM. Blue and white light suppress melatonin synthesis by 1.5 to 3 hours. A red or amber bulb, a smart bulb set to warm mode, or a Himalayan salt lamp all work and cost very little. No screens after 9 PM, or use blue-light blocking glasses.</p>
+        <p><strong>Bedroom:</strong> 65 to 68 degrees Fahrenheit. Blackout curtains or a sleep mask. White noise if needed. Bed is for sleep and sex only.</p>
+        <p><strong>Before bed:</strong> Write one priority for tomorrow. Research found that writing a specific to-do list before bed reduced time to fall asleep compared to journaling about completed tasks. Avoid alcohol within 3 hours of bed, as it suppresses cortisol initially, then produces a rebound spike in the second half of the night.</p>
+      </div>
+    </div>
+    <div class="ref-subsection">
+      <h4>The 3 AM Wake</h4>
+      <div class="ref-body">
+        <p>As progesterone declines, its brain metabolite allopregnanolone drops with it, removing the buffer against the natural cortisol rise that occurs around 2 to 3 AM. A subtle physiological signal becomes a full wake trigger. A small protein and fat snack such as nuts, nut butter, or full-fat Greek yogurt 30 to 60 minutes before bed can stabilize overnight glucose and reduce these wakings. If you wake and cannot return to sleep within 20 minutes, get up, go to a dim room, do something calm, and return when sleepy. This protects the association between your bed and sleep.</p>
+        <p>For women with persistent 3 AM waking, five evidence-based strategies are worth discussing with your clinician:</p>
+        <ol style="padding-left:18px;font-size:15px;color:var(--text-mid);line-height:1.8;margin-top:8px;">
+          <li><strong>Hormone support (Rx required)</strong> — For women with progesterone decline driving 3 AM waking, hormonal support options exist. Discuss with your healthcare provider.</li>
+          <li><strong>CBT-I</strong> — The most durable solution. Rebuilds sleep drive and breaks conditioned wakefulness through sleep restriction and stimulus control. Find a provider: behavioralsleep.org/find-a-provider</li>
+          <li><strong>Magnesium Glycinate</strong> — Supports GABA, moderates cortisol, and lowers core body temperature via glycine. Discuss dosing with your provider.</li>
+          <li><strong>Stabilize Blood Glucose Before Bed</strong> — A nocturnal glucose drop triggers cortisol. A small protein and fat snack 30 to 60 minutes before bed can blunt the surge.</li>
+          <li><strong>Anchor Your Circadian Rhythm</strong> — Same wake time daily. Morning bright light within 30 minutes of waking. No screens after 9 PM. Consider red bulbs or dimmers in lamps.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="personal-note">Sleep is a heavy topic, especially when you are already in the thick of a hard season. If you are struggling, you are not alone in that, and seeking help is not weakness. Because sleep is so multifactorial, it is often one of the last things to fully resolve. Be patient with yourself and honest with your provider.</div>
+  </div>
+
+    <!-- DETOX BLOCK -->
+  <div class="ref-block-header detox">
+    <h3>Detox</h3>
+    <div class="block-sub">Cut what costs you</div>
+  </div>
+
+  <!-- Ref Item 9 -->
+  <div class="ref-item">
+    <div class="ref-item-num">09</div>
+    <div class="ref-item-title">Reduce or eliminate alcohol</div>
+    <div class="science-pill">Sleep architecture · Cortisol · Carcinogenesis · Hot flashes · Liver metabolism</div>
+    <div class="ref-body">
+      <p>Alcohol is the habit most likely to be quietly undermining everything else on this list. It disrupts sleep architecture, specifically suppressing REM and slow-wave sleep in the second half of the night. This is why a glass of wine helps you fall asleep and then wakes you at 2am. It raises cortisol. It worsens hot flashes and night sweats. It is classified as a Group 1 carcinogen by the World Health Organization.</p>
+      <p>The narrative that a glass of wine is good for your heart has been substantially revised in recent research. Current evidence does not support a safe threshold for women, and the risks increase in perimenopause when the liver’s estrogen metabolism is already under demand.</p>
+      <p>Return to the mindset shift: Own the choice. Instead of “I can’t drink wine,” try “I don’t want alcohol right now.” The reframe matters.</p>
+    </div>
+    <div class="personal-note">For many women in this season, this one is the hardest habit on the list. The process might take time and nothing has to be absolute. Decide what works for you and move toward it intentionally. If you feel you need support, please reach out to your primary care provider.</div>
+  </div>
+
+  <!-- Ref Item 10 -->
+  <div class="ref-item">
+    <div class="ref-item-num">10</div>
+    <div class="ref-item-title">Digital boundaries</div>
+    <div class="science-pill">Cortisol · HPA axis · Attention restoration · Dopamine · Cognitive load</div>
+    <div class="ref-body">
+      <p>Screens are not neutral. Every notification, scroll, and news headline activates a low-grade stress response. Over the course of a day, constant digital noise keeps cortisol elevated, depletes directed attention, and crowds out the mental space needed for presence, creativity, and genuine rest.</p>
+      <p>Evening screen use specifically delays melatonin onset by up to two to three hours, meaning the scrolling that feels like unwinding is actively delaying the sleep your body needs.</p>
+      <p>Doom scrolling exploits the brain’s threat-detection system. The algorithm is designed to keep you engaged, surfacing content that triggers anxiety, outrage, or comparison. Each scroll is a small cortisol hit accumulated over an evening.</p>
+      <p>Digital boundaries are not self-denial. They are self-respect. Decide what deserves your attention and protect that decision.</p>
+    </div>
+    <div class="personal-note">Ask yourself once a day: is this adding to my life, or am I in default mode? That question alone is enough to begin.</div>
+  </div>
+
+  <!-- Ref Item 11 -->
+  <div class="ref-item" style="border-radius:0 0 8px 8px;">
+    <div class="ref-item-num">11</div>
+    <div class="ref-item-title">Scheduled worry — all-day practice</div>
+    <div class="science-pill">Cognitive load · CBT · Implementation intention research · HRV · Sleep onset latency</div>
+    <div class="ref-body">
+      <p>The mental load of this season is not a personality flaw or a lack of discipline. It is a neurological reality. Holding unresolved tasks, worries, and decisions in working memory consumes significant mental resources, crowding out presence, creativity, and joy.</p>
+      <p>Scheduled worry time is a validated CBT technique. It works because it gives the anxious brain a later container. The worry does not disappear. It gets a meeting. Write it down, assign it a time, close the notebook, and return to now.</p>
+      <p>A physical notebook on the counter with a pencil already there removes all friction from capture. Research on implementation intentions shows that the more specific the system, the higher the follow-through. When a worry interrupts a good moment, write it and return. The notebook stays open. The present moment stays protected.</p>
+    </div>
+    <div class="personal-note">This. Is. Gold.</div>
+  </div>
+
+  <!-- CONNECT BLOCK -->
+  <div class="ref-block-header connect">
+    <h3>Connect</h3>
+    <div class="block-sub">Return to what matters</div>
+  </div>
+
+  <!-- Ref Item 12 -->
+  <div class="ref-item">
+    <div class="ref-item-num">12</div>
+    <div class="ref-item-title">Fully present with my people</div>
+    <div class="science-pill">Social isolation · Longevity · Oxytocin · Inflammation · Mortality risk</div>
+    <div class="ref-body">
+      <p>Social isolation increases all-cause mortality risk comparably to smoking in longitudinal research. Perimenopause symptoms, fatigue, anxiety, irritability, low mood, can quietly drive withdrawal from the people and activities that sustain us. Connection is not a luxury. It is a health intervention.</p>
+      <p>When home with family, be home. Phone face-down, fully present, engaged. Real conversations with friends, not texts, not likes, and a monthly commitment that gets protected on the calendar.</p>
+    </div>
+    <div class="personal-note">Presence produces peace. And peace opens the door to laughter, to play, to the kind of joy that makes doing all of the above not just possible, but worth it.</div>
+  </div>
+
+  <!-- Ref Item 13 -->
+  <div class="ref-item">
+    <div class="ref-item-num">13</div>
+    <div class="ref-item-title">Show up and give</div>
+    <div class="science-pill">Longevity · Dementia risk · Cardiovascular mortality · Purpose and health outcomes</div>
+    <div class="ref-body">
+      <p>Purpose is not an accomplishment. It is not a goal you set and work toward. It is quite simply the uniqueness that is you making its mark on the world around you. Philosophers, social scientists and Biblical scripture are in agreement that the people who find the most meaning out of life, who live long healthy years with joy and peace, are those who have found a way to serve that feels genuine to themselves and does good for others.</p>
+      <p>Many of us naturally find ourselves in roles that are in service to others. The question we must ask ourselves is do we really see the divine in what we are doing? Do we offer ourselves without expecting anything in return? Do we give from a heart that is grateful to have the capacity to serve?</p>
+      <p>In order for us to truly share ourselves in any capacity, to give a smile to a stranger, cook a warm meal for our family, or do anything at all, we must examine our heart, find strength through spiritual formation, and lay a solid foundation for our bodies, minds and spirits. It is on this ground our roots dig deeper, so that our branches extend further and can carry more with greater ease.</p>
+    </div>
+    <div class="personal-note">The giving is the meaning. Purpose is now, in your ugly and your beautiful. Not someday, not after the next accomplishment, not when everything is finally in order. You speak, you move, you breathe, you ripple — and the world receives only what you can offer. Take care of you so that you can be fully you.</div>
+  </div>
+
+  <!-- Ref Item 14 -->
+  <div class="ref-item">
+    <div class="ref-item-num">14</div>
+    <div class="ref-item-title">Grateful moments: right now I am grateful for…</div>
+    <div class="science-pill">Positive psychology · HPA axis · Cortisol · Neuroplasticity · Savoring</div>
+    <div class="ref-body">
+      <p>The word itself seems almost burned by the wellness industry. So I invite you to immediately take this a step deeper. Gratitude is not spiritual bypassing. It is not toxic positivity. It is not complacency.</p>
+      <p>Gratitude is the mind and soul’s worldview that is an ongoing decision to override the emotion of the moment in order to find the gift. It is being thankful for the physician as you are bleeding, even though the wound hurts like hell. The analogy extends to nearly everything. From not having a wound at all, a paper cut or an amputation.</p>
+      <p>It means that you acknowledge the Giver before considering the circumstance. Gratitude is a choice to see how all that we have been given, the good and the bad, is for our formation. It is choosing to see not just what lies right in front of us, but what is beneath it and how that shapes who we are today and who we are becoming.</p>
+      <p>Scripture states in 1 Thessalonians 5:18: be thankful in all circumstances, not for all circumstances. That distinction matters. You are not being asked to pretend your pain is not real. You are being asked to hold your pain inside a larger story. Philippians 4:6-7 carries this further: “Don’t worry about anything; instead, pray about everything. Tell God what you need, and thank him for all he has done. Then you will experience God’s peace, which exceeds anything we can understand. His peace will guard your hearts and minds as you live in Christ Jesus.”</p>
+      <p>In the same way that we train our bodies to stand upright and strong, we can also train our minds toward a posture of gratitude. Gratitude interrupts the rumination loop by redirecting attention before the thought spiral gains momentum. It is grounding for the soul.</p>
+    </div>
+    <div class="personal-note">This is the work of the wisdom years: not just what we are doing with our bodies, but who we are becoming.</div>
+  </div>
+
+  <!-- Ref Item 15 -->
+  <div class="ref-item" style="border-radius:0 0 8px 8px;">
+    <div class="ref-item-num">15</div>
+    <div class="ref-item-title">Spiritual anchor</div>
+    <div class="science-pill">Spiritual wellbeing · Cortisol · Inflammation · Meaning · Circadian biology</div>
+    <div class="ref-body">
+      <p>The American College of Lifestyle Medicine recognizes spiritual wellbeing as integral to whole-person health. Regular spiritual practice is associated with lower cortisol, reduced inflammatory markers, better sleep quality, improved pain perception, lower rates of depression, and longer lifespan across multiple longitudinal studies.</p>
+      <p>For women in their 40s and 50s, in a season when roles are evolving, bodies are changing, and identity is shifting, spiritual grounding provides something no supplement or protocol can: a sense of being known, held, and accompanied through the transition.</p>
+      <p>You do not need to carve out new time. Stack it onto your morning sunlight. Ten minutes outside, light on your face, a prayer or a moment of gratitude or simply the quiet awareness that you are held. Worship music in the car. A Bible app verse while coffee brews. Sixty seconds of honest prayer while the house is still quiet.</p>
+    </div>
+    <div class="scripture-ref">“And we know that in all things God works for the good of those who love him.” — Romans 8:28</div>
+    <div class="personal-note">Prayerful living is a way of life, not a moment in time. Invite God in, every moment, every day.</div>
+  </div>
+
+  <!-- DISCLAIMER -->
+  <div class="disclaimer">
+    This checklist is for educational purposes only and does not constitute medical advice.<br>
+    Please consult your healthcare provider before making changes to your health routine.<br><br>
+    Written by Jessica McGraw, PA-C, dipACLM. AI used for editing and formatting only.<br>
+    © 2026 Jessica McGraw. All rights reserved. Foundation 15™ is a product of Lumeria Wellness™.<br>
+    Cell to Soul™ is a trademark of Jessica McGraw. Unauthorized reproduction or distribution of this material is prohibited.
+  </div>
+
+</div><!-- end max-wrap -->
+</div><!-- end reference tab -->
+
+<script>
+(function() {
+'use strict';
+
+// ---- STATE ----
+var state = {
+  items: {},
+  fuelDots: [false, false, false, false],
+  minutes: 0,
+  sessions: 0,
+  hardDay: false
+};
+
+var hardDayItems = [1, 5, 15];
+
+// ---- TAB SWITCHING ----
+window.switchTab = function(tabName, btn) {
+  document.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
+  document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+  document.getElementById('tab-' + tabName).classList.add('active');
+  btn.classList.add('active');
+};
+
+// ---- DATE DISPLAY ----
+function updateDateDisplay() {
+  var d = new Date();
+  var opts = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  var el = document.getElementById('date-display');
+  if (el) el.textContent = d.toLocaleDateString('en-US', opts);
+}
+updateDateDisplay();
+
+// ---- COMMITMENT DATE ----
+window.saveStartDate = function(val) {
+  try { localStorage.setItem('f15_start_date', val); } catch(e) {}
+};
+(function loadStartDate() {
+  try {
+    var v = localStorage.getItem('f15_start_date');
+    if (v) { var el = document.getElementById('start-date'); if (el) el.value = v; }
+  } catch(e) {}
+})();
+
+// ---- ITEM TOGGLE ----
+window.toggleItem = function(n) {
+  state.items[n] = !state.items[n];
+  var circle = document.getElementById('circle-' + n);
+  if (circle) {
+    if (state.items[n]) circle.classList.add('checked');
+    else circle.classList.remove('checked');
+  }
+  saveState();
+  updateProgress();
+  checkCompletion();
+};
+
+// ---- FUEL DOTS ----
+window.tapFuelDot = function(n) {
+  if (n === 2) {
+    var pop = document.getElementById('popover-plate');
+    if (pop) { pop.classList.toggle('open'); if (pop.classList.contains('open')) drawPlateSmall(); }
+    state.fuelDots[n-1] = !state.fuelDots[n-1];
+  } else if (n === 3) {
+    var pop2 = document.getElementById('popover-hydrate');
+    if (pop2) pop2.classList.toggle('open');
+    state.fuelDots[n-1] = !state.fuelDots[n-1];
+  } else {
+    state.fuelDots[n-1] = !state.fuelDots[n-1];
+  }
+  var btn = document.getElementById('fdot-' + n);
+  if (btn) {
+    if (state.fuelDots[n-1]) btn.classList.add('tapped');
+    else btn.classList.remove('tapped');
+  }
+  var allDone = state.fuelDots[0] && state.fuelDots[1] && state.fuelDots[3];
+  var circle3 = document.getElementById('circle-3');
+  if (circle3) {
+    if (allDone) { circle3.classList.add('checked'); state.items[3] = true; }
+    else { circle3.classList.remove('checked'); state.items[3] = false; }
+  }
+  saveState();
+  updateProgress();
+  checkCompletion();
+};
+
+window.closePopover = function(id) {
+  var el = document.getElementById(id);
+  if (el) el.classList.remove('open');
+};
+
+// ---- ACCORDION ----
+window.toggleAccordion = function(id) {
+  var el = document.getElementById(id);
+  if (el) el.classList.toggle('open');
+};
+window.toggleSectionAccordion = function(id) {
+  var el = document.getElementById(id);
+  if (el) el.classList.toggle('open');
+  if (id === 'history-body') renderHistory();
+};
+
+// ---- ZONE 2 ----
+window.adjustMinutes = function(delta) {
+  state.minutes = Math.max(0, state.minutes + delta);
+  var el = document.getElementById('minutes-count');
+  if (el) el.textContent = state.minutes;
+  var msg = '';
+  if (state.minutes >= 150) {
+    msg = '150 minutes this week. Your heart, your metabolism, your mood — all of it benefits.';
+  } else if (state.minutes >= 60) {
+    msg = 'More than halfway. Feel that.';
+  } else if (state.minutes > 0) {
+    msg = 'One session done. Keep going.';
+  }
+  var mEl = document.getElementById('zone2-milestone');
+  if (mEl) mEl.textContent = msg;
+  saveState();
+  updateProgress();
+  checkCompletion();
+};
+window.resetZone2 = function() {
+  state.minutes = 0;
+  var el = document.getElementById('minutes-count');
+  if (el) el.textContent = '0';
+  var mEl = document.getElementById('zone2-milestone');
+  if (mEl) mEl.textContent = '';
+  saveState();
+  updateProgress();
+  checkCompletion();
+};
+// ---- RESISTANCE ----
+window.tapSession = function(n) {
+  var current = state.sessions;
+  if (n <= current) {
+    state.sessions = n - 1;
+  } else {
+    state.sessions = n;
+  }
+  for (var i = 1; i <= 3; i++) {
+    var sc = document.getElementById('sess-' + i);
+    if (sc) {
+      if (i <= state.sessions) sc.classList.add('tapped');
+      else sc.classList.remove('tapped');
+    }
+  }
+  var msgs = ['', 'You started. That is everything.', 'Halfway there. Your body is already responding.', 'Three sessions. This is how it compounds.'];
+  var mEl = document.getElementById('resist-milestone');
+  if (mEl) mEl.textContent = msgs[state.sessions] || '';
+  saveState();
+  updateProgress();
+  checkCompletion();
+};
+window.resetResistance = function() {
+  state.sessions = 0;
+  for (var i = 1; i <= 3; i++) {
+    var sc = document.getElementById('sess-' + i);
+    if (sc) sc.classList.remove('tapped');
+  }
+  var mEl = document.getElementById('resist-milestone');
+  if (mEl) mEl.textContent = '';
+  saveState();
+  updateProgress();
+  checkCompletion();
+};
+// ---- PROGRESS ----
+function countComplete() {
+  var count = 0;
+  var manualItems = [1,2,4,5,8,9,10,11,12,13,14,15];
+  manualItems.forEach(function(n) { if (state.items[n]) count++; });
+  if (state.items[3]) count++;
+  if (state.items[6]) count++;
+  if (state.items[7]) count++;
+  return count;
+}
+function updateProgress() {
+  var n = countComplete();
+  var pct = Math.round((n / 15) * 100);
+  var bar = document.getElementById('progress-bar');
+  if (bar) bar.style.width = pct + '%';
+  var txt = document.getElementById('progress-text');
+  if (txt) txt.textContent = n + ' of 15 complete';
+}
+function checkCompletion() {
+  var n = countComplete();
+  var card = document.getElementById('completion-card');
+  if (card) card.style.display = (n >= 15) ? 'block' : 'none';
+  var partial = document.getElementById('partial-card');
+  if (partial) partial.style.display = (n >= 8 && n < 15) ? 'block' : 'none';
+}
+
+// ---- HARD DAY MODE ----
+window.toggleHardDay = function() {
+  state.hardDay = !state.hardDay;
+  var btn = document.getElementById('hard-day-btn');
+  var fc = document.getElementById('full-checklist');
+  var hc = document.getElementById('hard-day-card');
+  if (state.hardDay) {
+    if (btn) { btn.textContent = 'Back to full list'; btn.classList.add('active'); }
+    if (fc) fc.style.display = 'none';
+    if (hc) { hc.style.display = 'block'; renderHardDayItems(); }
+  } else {
+    if (btn) { btn.textContent = 'Hard Day Mode'; btn.classList.remove('active'); }
+    if (fc) fc.style.display = 'block';
+    if (hc) hc.style.display = 'none';
+  }
+};
+function renderHardDayItems() {
+  var container = document.getElementById('hard-day-items');
+  if (!container) return;
+  var defs = {
+    1: { title: 'Daily sunlight and nature', sub: 'Morning, midday, and evening anchors' },
+    5: { title: 'Pause on purpose', sub: 'Stop. Breathe. Soak it in.' },
+    15: { title: 'Spiritual anchor', sub: 'Prayer, stillness, or gratitude' }
+  };
+  container.innerHTML = '';
+  hardDayItems.forEach(function(n) {
+    var d = defs[n];
+    var div = document.createElement('div');
+    div.style.cssText = 'display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(44,40,37,0.10);';
+    var circle = document.createElement('div');
+    circle.style.cssText = 'width:26px;height:26px;border-radius:50%;border:2px solid var(--coral);flex-shrink:0;cursor:pointer;display:flex;align-items:center;justify-content:center;background:transparent;';
+    if (state.items[n]) {
+      circle.style.background = 'rgba(255,255,255,0.3)';
+      circle.innerHTML = '<span style="color:#fff;font-size:14px;">&#10003;</span>';
+    }
+    circle.onclick = (function(num, c) {
+      return function() {
+        state.items[num] = !state.items[num];
+        if (state.items[num]) {
+          c.style.background = 'rgba(255,255,255,0.3)';
+          c.innerHTML = '<span style="color:#fff;font-size:14px;">&#10003;</span>';
+          var mainCircle = document.getElementById('circle-' + num);
+          if (mainCircle) mainCircle.classList.add('checked');
+        } else {
+          c.style.background = 'transparent';
+          c.innerHTML = '';
+          var mainCircle2 = document.getElementById('circle-' + num);
+          if (mainCircle2) mainCircle2.classList.remove('checked');
+        }
+        saveState();
+        updateProgress();
+      };
+    })(n, circle);
+    var txt = document.createElement('div');
+    txt.innerHTML = '<div style="font-size:15px;font-weight:500;color:#2c2825;">' + d.title + '</div><div style="font-size:13px;font-style:italic;color:#5c5450;">' + d.sub + '</div>';
+    div.appendChild(circle);
+    div.appendChild(txt);
+    container.appendChild(div);
+  });
+}
+
+// ---- CALCULATORS ----
+window.calcWater = function() {
+  var w = parseFloat(document.getElementById('water-weight').value);
+  var u = document.getElementById('water-unit').value;
+  var el = document.getElementById('water-result');
+  if (!w || isNaN(w)) { if (el) el.textContent = 'Please enter your weight.'; return; }
+  var oz = (u === 'kg') ? (w * 2.205 / 2) : (w / 2);
+  if (el) el.textContent = 'Daily target: ' + Math.round(oz) + ' oz (' + Math.round(oz * 29.574 / 1000 * 10) / 10 + ' liters)';
+};
+window.calcWaterRef = function() {
+  var w = parseFloat(document.getElementById('water-weight-ref').value);
+  var u = document.getElementById('water-unit-ref').value;
+  var el = document.getElementById('water-result-ref');
+  if (!w || isNaN(w)) { if (el) el.textContent = 'Please enter your weight.'; return; }
+  var oz = (u === 'kg') ? (w * 2.205 / 2) : (w / 2);
+  if (el) el.textContent = 'Daily target: ' + Math.round(oz) + ' oz (' + Math.round(oz * 29.574 / 1000 * 10) / 10 + ' liters)';
+};
+window.calcProtein = function() {
+  var w = parseFloat(document.getElementById('protein-weight').value);
+  var u = document.getElementById('protein-unit').value;
+  var el = document.getElementById('protein-result');
+  if (!w || isNaN(w)) { if (el) el.textContent = 'Please enter your ideal body weight.'; return; }
+  var kg = (u === 'kg') ? w : (w * 0.453592);
+  var low = Math.round(kg * 1.2 * 10) / 10;
+  var high = Math.round(kg * 1.6 * 10) / 10;
+  if (el) el.textContent = 'Target: ' + low + 'g to ' + high + 'g per day';
+};
+window.calcProteinRef = function() {
+  var w = parseFloat(document.getElementById('protein-weight-ref').value);
+  var u = document.getElementById('protein-unit-ref').value;
+  var el = document.getElementById('protein-result-ref');
+  if (!w || isNaN(w)) { if (el) el.textContent = 'Please enter your ideal body weight.'; return; }
+  var kg = (u === 'kg') ? w : (w * 0.453592);
+  var low = Math.round(kg * 1.2 * 10) / 10;
+  var high = Math.round(kg * 1.6 * 10) / 10;
+  if (el) el.textContent = 'Target: ' + low + 'g to ' + high + 'g per day';
+};
+
+// ---- PLATE CANVAS ----
+function drawPlate(canvasId, radius) {
+  var canvas = document.getElementById(canvasId);
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+  var cx = canvas.width / 2;
+  var cy = canvas.height / 2;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  // cream background
+  ctx.beginPath();
+  ctx.arc(cx, cy, radius + 4, 0, Math.PI * 2);
+  ctx.fillStyle = '#f2edd8';
+  ctx.fill();
+  // top half - green
+  ctx.beginPath();
+  ctx.moveTo(cx, cy);
+  ctx.arc(cx, cy, radius, -Math.PI/2, Math.PI/2);
+  ctx.closePath();
+  ctx.fillStyle = '#6B9E2A';
+  ctx.fill();
+  // bottom left - coral
+  ctx.beginPath();
+  ctx.moveTo(cx, cy);
+  ctx.arc(cx, cy, radius, Math.PI/2, Math.PI);
+  ctx.closePath();
+  ctx.fillStyle = '#e8907a';
+  ctx.fill();
+  // bottom right - yellow
+  ctx.beginPath();
+  ctx.moveTo(cx, cy);
+  ctx.arc(cx, cy, radius, Math.PI, Math.PI * 1.5);
+  ctx.closePath();
+  ctx.fillStyle = '#FFD700';
+  ctx.fill();
+  // white lines
+  ctx.strokeStyle = '#fff';
+  ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx, cy - radius); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx, cy + radius); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx - radius, cy); ctx.stroke();
+  // labels
+  ctx.fillStyle = '#fff';
+  ctx.font = 'bold ' + Math.round(radius * 0.18) + 'px Jost, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+}
+function drawPlateSmall() { drawPlate('plate-canvas-small', 65); }
+function drawPlateRef() { drawPlate('plate-canvas-ref', 85); }
+
+// ---- WEEKLY REFLECTION ----
+window.saveReflection = function() {
+  try {
+    var week = getWeekKey();
+    var data = {
+      worked: document.getElementById('reflect-1').value,
+      blocked: document.getElementById('reflect-2').value,
+      different: document.getElementById('reflect-3').value,
+      saved: new Date().toISOString()
+    };
+    var key = 'f15_reflection_' + week;
+    localStorage.setItem(key, JSON.stringify(data));
+    var confirm = document.getElementById('saved-confirm');
+    if (confirm) {
+      confirm.style.display = 'inline';
+      setTimeout(function() { confirm.style.display = 'none'; }, 3000);
+    }
+  } catch(e) {}
+};
+
+// ---- HISTORY ----
+function getWeekKey() {
+  var d = new Date();
+  var jan1 = new Date(d.getFullYear(), 0, 1);
+  var week = Math.ceil(((d - jan1) / 86400000 + jan1.getDay() + 1) / 7);
+  return d.getFullYear() + '-W' + week;
+}
+function renderHistory() {
+  try {
+    var streakEl = document.getElementById('streak-badge');
+    var recordsEl = document.getElementById('history-records');
+    var historyRaw;
+    try { historyRaw = JSON.parse(localStorage.getItem('f15_history') || '[]'); } catch(e) { historyRaw = []; }
+    if (!Array.isArray(historyRaw)) historyRaw = [];
+    if (streakEl) {
+      streakEl.textContent = historyRaw.length > 0
+        ? 'You have shown up for ' + historyRaw.length + ' week' + (historyRaw.length === 1 ? '' : 's') + '.'
+        : 'Your streak starts this week.';
+    }
+    if (recordsEl) {
+      if (historyRaw.length === 0) {
+        recordsEl.innerHTML = '<div class="history-empty">Your history will appear here after your first week.</div>';
+      } else {
+        var html = '';
+        historyRaw.slice().reverse().forEach(function(rec) {
+          html += '<div class="history-record">' + (rec.week || '') + ' &mdash; ' + (rec.sessions || 0) + ' resistance sessions &middot; ' + (rec.minutes || 0) + ' cardio minutes</div>';
+        });
+        recordsEl.innerHTML = html;
+      }
+    }
+  } catch(e) {}
+}
+
+// ---- NEW WEEK CARD ----
+function checkNewWeek() {
+  try {
+    var lastWeek = localStorage.getItem('f15_last_week');
+    var thisWeek = getWeekKey();
+    if (lastWeek && lastWeek !== thisWeek) {
+      var card = document.getElementById('new-week-card');
+      var msgEl = document.getElementById('new-week-msg');
+      if (card && msgEl) {
+        var prevSess = parseInt(localStorage.getItem('f15_prev_sessions') || '0', 10);
+        var prevMins = parseInt(localStorage.getItem('f15_prev_minutes') || '0', 10);
+        var msg;
+        if (prevSess >= 3 && prevMins >= 150) {
+          msg = 'Look at that week. You showed up for yourself and it shows. Begin again with that same energy.';
+        } else if (prevSess === 0 && prevMins === 0) {
+          msg = 'Life happened. That is not failure. That is just life. Your foundation is still here, exactly where you left it. No judgment. Just one step forward from wherever you are. Begin again.';
+        } else {
+          msg = 'Consistent and real. That is the whole game. Every micromoment you chose yourself this week compounded. Begin again.';
+        }
+        msgEl.textContent = msg;
+        card.style.display = 'block';
+      }
+    } else {
+      try { localStorage.setItem('f15_last_week', thisWeek); } catch(e2) {}
+    }
+  } catch(e) {}
+}
+window.beginNewWeek = function() {
+  try {
+    var historyRaw;
+    try { historyRaw = JSON.parse(localStorage.getItem('f15_history') || '[]'); } catch(e) { historyRaw = []; }
+    if (!Array.isArray(historyRaw)) historyRaw = [];
+    historyRaw.push({
+      week: localStorage.getItem('f15_last_week') || getWeekKey(),
+      sessions: state.sessions,
+      minutes: state.minutes
+    });
+    localStorage.setItem('f15_history', JSON.stringify(historyRaw));
+    localStorage.setItem('f15_prev_sessions', state.sessions);
+    localStorage.setItem('f15_prev_minutes', state.minutes);
+    localStorage.setItem('f15_last_week', getWeekKey());
+    var card = document.getElementById('new-week-card');
+    if (card) card.style.display = 'none';
+    resetAll();
+  } catch(e) {}
+};
+
+// ---- RESET FOR TOMORROW ----
+window.resetForTomorrow = function() {
+  state.items = {};
+  state.fuelDots = [false, false, false, false];
+  for (var i = 1; i <= 15; i++) {
+    var c = document.getElementById('circle-' + i);
+    if (c) c.classList.remove('checked');
+  }
+  for (var j = 1; j <= 4; j++) {
+    var fd = document.getElementById('fdot-' + j);
+    if (fd) fd.classList.remove('tapped');
+  }
+  updateProgress();
+  checkCompletion();
+  saveState();
+};
+function resetAll() {
+  state.items = {};
+  state.fuelDots = [false, false, false, false];
+  state.minutes = 0;
+  state.sessions = 0;
+  for (var i = 1; i <= 15; i++) {
+    var c = document.getElementById('circle-' + i);
+    if (c) c.classList.remove('checked');
+  }
+  for (var j = 1; j <= 4; j++) {
+    var fd = document.getElementById('fdot-' + j);
+    if (fd) fd.classList.remove('tapped');
+  }
+  for (var k = 1; k <= 3; k++) {
+    var sc = document.getElementById('sess-' + k);
+    if (sc) sc.classList.remove('tapped');
+  }
+  var mc = document.getElementById('minutes-count');
+  if (mc) mc.textContent = '0';
+  var rmEl = document.getElementById('resist-milestone');
+  if (rmEl) rmEl.textContent = '';
+  var zmEl = document.getElementById('zone2-milestone');
+  if (zmEl) zmEl.textContent = '';
+  updateProgress();
+  checkCompletion();
+  saveState();
+}
+
+// ---- PERSIST STATE ----
+function saveState() {
+  try {
+    localStorage.setItem('f15_state', JSON.stringify({
+      items: state.items,
+      fuelDots: state.fuelDots,
+      minutes: state.minutes,
+      sessions: state.sessions
+    }));
+  } catch(e) {}
+}
+function loadState() {
+  try {
+    var raw = localStorage.getItem('f15_state');
+    if (!raw) return;
+    var saved = JSON.parse(raw);
+    if (saved.items) {
+      state.items = saved.items;
+      Object.keys(state.items).forEach(function(n) {
+        if (state.items[n]) {
+          var c = document.getElementById('circle-' + n);
+          if (c) c.classList.add('checked');
+        }
+      });
+    }
+    if (saved.fuelDots && Array.isArray(saved.fuelDots)) {
+      state.fuelDots = saved.fuelDots;
+      for (var j = 0; j < 4; j++) {
+        if (state.fuelDots[j]) {
+          var fd = document.getElementById('fdot-' + (j+1));
+          if (fd) fd.classList.add('tapped');
+        }
+      }
+    }
+    if (typeof saved.minutes === 'number') {
+      state.minutes = saved.minutes;
+      var mc = document.getElementById('minutes-count');
+      if (mc) mc.textContent = state.minutes;
+    }
+    if (typeof saved.sessions === 'number') {
+      state.sessions = saved.sessions;
+      for (var k = 1; k <= 3; k++) {
+        if (k <= state.sessions) {
+          var sc = document.getElementById('sess-' + k);
+          if (sc) sc.classList.add('tapped');
+        }
+      }
+    }
+    updateProgress();
+    checkCompletion();
+  } catch(e) {}
+}
+
+// ---- INIT ----
+loadState();
+checkNewWeek();
+setTimeout(function() {
+  drawPlateRef();
+}, 100);
+
+// Service worker registration
+if ('serviceWorker' in navigator) {
+  var swCode = 'self.addEventListener("install", function(e){e.waitUntil(caches.open("f15-v1").then(function(c){return c.addAll(["/"]);}));});self.addEventListener("fetch", function(e){e.respondWith(caches.match(e.request).then(function(r){return r || fetch(e.request);}));});';
+  var blob = new Blob([swCode], { type: 'application/javascript' });
+  var swUrl = URL.createObjectURL(blob);
+  navigator.serviceWorker.register(swUrl).catch(function() {});
+}
+
+})();
+</script>
+
+
+</body></html>
