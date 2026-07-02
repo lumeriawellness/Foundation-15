@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0079)file:///Users/jessicamcgraw/Downloads/Foundation_15_Lumeria_Wellness_V5_14.html -->
+<!-- saved from url=(0079)file:///Users/jessicamcgraw/Downloads/Foundation_15_Lumeria_Wellness_V5_17.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1150,16 +1150,16 @@ header .brand {
   <div class="activation-bar">Pick one. Just one. Do it today. Come back tomorrow for another.</div>
 
   <!-- 4. DATE DISPLAY -->
-  <div class="date-display" id="date-display">Tuesday, June 30, 2026</div>
+  <div class="date-display" id="date-display">Wednesday, July 1, 2026</div>
 
   <!-- 5. PROGRESS BAR -->
   <div class="progress-wrap">
     <div class="progress-label">
       <span>Today’s Foundation</span>
-      <span id="progress-text">0 of 15 complete</span>
+      <span id="progress-text">1 of 15 complete</span>
     </div>
     <div class="progress-bar-outer">
-      <div class="progress-bar-inner" id="progress-bar" style="width: 0%;"></div>
+      <div class="progress-bar-inner" id="progress-bar" style="width: 7%;"></div>
     </div>
   </div>
 
@@ -1226,16 +1226,17 @@ header .brand {
     <!-- Item 3 -->
     <div class="checklist-item">
       <div class="item-row">
-        <div class="item-circle nourish-dot" id="circle-3" onclick="toggleItem(3)"></div>
+        <div class="item-circle nourish-dot checked" id="circle-3" onclick="toggleItem(3)"></div>
         <div class="item-text">
           <div class="item-title">Fuel for function</div>
-          <div class="item-sub">Gut health · the foundation plate · move after meals</div>
+          <div class="item-sub">Gut health · the foundation plate · move after meals · sugar aware</div>
         </div>
       </div>
       <div class="fuel-dots">
-        <button class="fuel-dot-btn" id="fdot-1" onclick="tapFuelDot(1)">🌿 Gut health</button>
-        <button class="fuel-dot-btn" id="fdot-2" onclick="tapFuelDot(2)">🍽 Foundation plate</button>
-        <button class="fuel-dot-btn" id="fdot-4" onclick="tapFuelDot(4)">🚶 Move after meals</button>
+        <button class="fuel-dot-btn tapped" id="fdot-1" onclick="tapFuelDot(1)">🌿 Gut health</button>
+        <button class="fuel-dot-btn tapped" id="fdot-2" onclick="tapFuelDot(2)">🍽 Foundation plate</button>
+        <button class="fuel-dot-btn tapped" id="fdot-4" onclick="tapFuelDot(4)">🚶 Move after meals</button>
+        <button class="fuel-dot-btn tapped" id="fdot-5" onclick="tapFuelDot(5)">Sugar aware</button>
       </div>
       <!-- Foundation Plate Popover -->
       <div class="inline-popover" id="popover-plate">
@@ -2009,7 +2010,7 @@ window.tapFuelDot = function(n) {
     if (state.fuelDots[n-1]) btn.classList.add('tapped');
     else btn.classList.remove('tapped');
   }
-  var allDone = state.fuelDots[0] && state.fuelDots[1] && state.fuelDots[3];
+  var allDone = state.fuelDots[0] && state.fuelDots[1] && state.fuelDots[3] && state.fuelDots[4];
   var circle3 = document.getElementById('circle-3');
   if (circle3) {
     if (allDone) { circle3.classList.add('checked'); state.items[3] = true; }
